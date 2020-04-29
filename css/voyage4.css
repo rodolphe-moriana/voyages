@@ -32,6 +32,7 @@ h1,h2{
     text-align: center;
     margin-top: 4%;
     margin-bottom: 3%;
+    font-family: 'Acme', sans-serif;
 }
 
 p{
@@ -59,9 +60,22 @@ p{
     margin-left: 9%;
 }
 
-#r-sous-container-esp-2 video{
+#r-sous-container-esp-2 iframe{
     width: 100%;
     border: black outset 3px;
     border-radius: 15px;
     box-shadow: black 0 0 100px;
+    height: 110%;
+}
+
+/* TRANSITION HR */
+
+hr{
+    margin-top: 7%;
+    width: 75%;
+    height: 2px;
+    color: black;
+    background-color: black;
+    border: black solid 1px;
+    margin-left: 12.5%;
 }
