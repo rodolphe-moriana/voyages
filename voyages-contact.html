@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Accueil</title>
+        <title>Contact</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/voyages.css">
+        <link rel="stylesheet" href="css/voyages-contact.css">
         <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
         <meta name="author" content="R. Moriana G.Lopez M. Jacquens">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="fa.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -68,7 +70,7 @@
                                     <a href="#">AUSTRALIE</a>
                                 </div>
                         </div>
-                    <a href="contact-test.html"><i class="fas fa-address-book"></i> CONTACT</a>
+                    <a href="voyages-contact.html"><i class="fas fa-address-book"></i> CONTACT</a>
                 </div>
                 <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                 <script>
@@ -173,11 +175,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="contact-test.html"> <i class="fas fa-address-book"></i> CONTACT</a></li>
+                    <li><a href="voyages-contact.html"> <i class="fas fa-address-book"></i> CONTACT</a></li>
                 </ul>
                 </div>
                 <div class="m-search-container">
-                    <form action="voyage-test.html">
+                    <form action="voayges.html">
                       <input id="m-button" type="text" placeholder="Rechercher" name="search">
                       <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
@@ -185,11 +187,65 @@
             </nav>
         </header>
         <main>
-            <section class="r-container">
-                <img src="images/drapeau_espagne.jpg" alt="Drapeau Espagne">
+            <section class="f-colonnes">
+                <div class="types-messages">
+                    <h3>Vous avez un projet voyage ?</h3>
+                    <p>
+                        Vous pouvez utiliser le formulaire de contact pour nous demander d'étoffer les articles sur les destinations déjà explorées et qui vous intéressent.
+                        <br><br>
+                        Vous pouvez également nous solliciter sur de nouvelles destinations. 
+                    </p>
+                </div>
+                <div class="formulaire">
+                    <form action="voyage-test.html">
+                        <div class="form-back">
+                            <div class="label-position">
+                                <input type="text" id="name" name="name" required placeholder="Nom et Prénom *" autofocus>
+                            </div>
+                            <div class="label-position">
+                                <input placeholder="Email *" type="email" name="email" required autocomplete="on" />
+                            </div>
+                            <div class="label-position">
+                                <input placeholder="Téléphone" type="text" name="phone" autocomplete="on"/>      
+                            </div>
+                            <div class="label-position">
+                                <textarea placeholder="Adresse, code postal et ville"name="field3" class="field-style" autocomplete="on"></textarea>
+                            </div>
+                            <div class="label-position">
+                                <textarea id="message" name="message" class="field-style" placeholder="Votre message *" autocomplete="on" required></textarea>
+                            </div>
+                            <div class="label-position button-section">
+                                <input type="submit" name="Sign Up" id="valider" value="ENVOYER" />
+                            </div>
+                            <div class="asterisque">
+                                <p>* Champs obligatoires</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="types-messages">
+                    <p>
+                        <span>Rodolphe Moriana</span><br>
+                        Chef de projet Web<br> 
+                        Tel. : + 33 (0)6 24 86 45 55<br>
+                        r.moriana@travel.com
+                    </p>
+                    <hr class="separation">
+                    <p>
+                        <span>Gregory Lopez</span><br>
+                        Développeur Web Fullstack<br>
+                        Tel. : + 33 (0)6 24 86 45 53<br>
+                        g.lopezr@travel.com
+                    </p>
+                    <hr class="separation">
+                    <p>
+                        <span>Marine Jacquens</span><br>
+                        Web designer <br>
+                        Tel. : + 33 (0)6 17 48 40 43<br>
+                        m.jacquens@travel.com
+                    </p>
+                </div>
             </section>
         </main>
-        <footer>
-        </footer>
     </body>
 </html>
