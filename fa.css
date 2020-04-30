@@ -78,6 +78,12 @@
 .fa-ad:before {
     content: "\f641";
 }
+.fa-piano:before{
+    content:"\f8d4";
+}
+.fa-camera-movie:before{
+    content:"\f8a9";
+}
 .fa-address-book:before {
     content: "\f2b9";
 }

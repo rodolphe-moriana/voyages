@@ -1,3 +1,5 @@
+html{scroll-behavior: smooth;}
+ 
 *{
     margin: 0px;
     padding: 0px;
@@ -21,7 +23,7 @@ video:focus{
     display: flex;
     justify-content: space-around;
     width:100%; 
-    background-color:#5D264D;
+    background-color:black;
     align-items: center;
     color:white;
     font-family:sans-serif;
@@ -43,7 +45,7 @@ video:focus{
 
 #m-monmenu ul li a { 
     display:block; 
-    background-color:#5D264D;
+    background-color:black;
     width:200px; 
     color:white; 
     line-height:40px;  
@@ -61,7 +63,7 @@ video:focus{
 #m-monmenu li { position:relative; }
 #m-monmenu li:hover ul.m-niveau2, #m-monmenu li li:hover ul.m-niveau3 { display:block; }
 
-@media (max-width:1075px){
+@media (max-width:1099px){
   .m-niveau1{
     display:none;
   }
@@ -84,7 +86,7 @@ video:focus{
     border: none;
     cursor: pointer;
     color:white;
-    background-color: #5D264D;
+    background-color: black;
     float:right;
     margin-top:3%;
 }
@@ -149,6 +151,6 @@ video:focus{
 }
 
 
-@media (min-width:1075px){
+@media (min-width:1099px){
   .m-sidenav,#menu-icon{display:none;}
 }

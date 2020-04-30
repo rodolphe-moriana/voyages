@@ -1,32 +1,7 @@
-.bg-image {
-  height: 50%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+#myVideo{
+    width:100%;
+    border: none;
 }
 
-
-.img1 { background: url("images/inspiration-voyage.jpg"); }
-.img2 { background-image: url("images/formulaire.png"); }
-.img3 { background-image: url("images/inspiration-voyage.jpg"); }
-.img4 { background-image: url("images/formulaire.png"); }
-.img5 { background-image: url("images/inspiration-voyage.jpg"); }
-.img6 { background-image: url("images/formulaire.png"); }
-
-
-.bg-text {
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0, 0.4); 
-  color: white;
-  font-weight: bold;
-  font-size: 80px;
-  border: 10px solid #f1f1f1;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 300px;
-  padding: 20px;
-  text-align: center;
-}
+iframe{border:none;}
