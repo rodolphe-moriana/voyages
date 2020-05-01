@@ -245,12 +245,15 @@ color:black;
 
 /*Articles*/
 
+/*Island*/
+
 .m-paysage{
+    background:url(images/aurores.jpg)no-repeat center fixed;
     color:white;
     font-size:50px;
     align-items: center;
     display:flex;
-    justify-content: center; background:url(images/aurores.jpg)no-repeat center fixed;
+    justify-content: center; 
     background-size: cover;
     padding-top:1%;
     min-height:550px;
@@ -264,7 +267,6 @@ color:black;
     color:black;
     font-size:50px;
     margin:5%;
-    
 }
 
 .m-articles h1{
@@ -290,10 +292,10 @@ color:black;
     width:30%;
 }
 
+.m-colonne-row-articles img{width:100%;}
 .m-colonne-row-articles-spe h3,
 .m-colonne-row-articles h3{
     font-size:20px;
-
 }
 
 .m-colonne-row-articles-spe a,
@@ -306,50 +308,46 @@ color:black;
     color:#14CA9A;
 }
 
-.m-colonne-row-articles img{
-    width:100%;
-}
-
 .m-colonne-row-articles-spe{
     margin-right:2%;
     margin-left:2%;
     width:40%;
 }
-.m-colonne-row-articles-spe img{width:100%;}
 
+.m-colonne-row-articles-spe img{width:100%;height:350px;}
+
+.m-container-articles {
+    position: relative;
+} 
+
+.m-container-articles:hover .m-overlay{
+  opacity: 1;
+} 
+
+.m-image-articles {
+    display: block;
+    width: 100%;
+}
+
+.m-overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding-top:2%;
+    padding-bottom:2%;
+    text-align: center;
+}
 
 .m-espace{
     margin-top:4%;
     margin-bottom:4%;
-}
-
-.m-container-articles {
-  position: relative;
-}
-
-.m-image-articles {
-  display: block;
-  width: 100%;
-}
-
-.m-overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); 
-  color: #f1f1f1; 
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-    padding-top:2%;
-    padding-bottom:2%;
-  text-align: center;
-}
-
-.m-container-articles:hover .m-overlay{
-  opacity: 1;
 }
 
 @media (max-width:1120px){
@@ -390,3 +388,152 @@ color:black;
     .m-articles h1{font-size:25px;}
     .m-articles h3{font-size:15px;}
 }
+
+/*Chine*/
+
+#m-chine{background: url(images/chine.gif)no-repeat center fixed}
+
+.m-chine-row{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width:auto;
+}
+
+.m-column-g{width: 100%;}
+.m-column-d{width:50%;}
+.m-column-d img{height:219px;}
+
+.m-chine-row img{
+    width:auto;
+    height: 218px;
+}
+
+.m-colonne-row-articles2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.m-colonne-row-articles-spe2{
+    width:auto;
+}
+
+.m-colonne-row-articles-spe2 img{width:100%;}
+
+.m-espace2{
+    margin-top:2%;
+    margin-bottom:1%;
+}
+
+.m-espace3{
+    margin-right:1%;
+    margin-left:1%;
+}
+
+.m-espace4{
+    margin-top:3.5%;
+    margin-bottom:3%;
+}
+
+.m-articles2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    color:black;
+    font-size:50px;
+    margin:5%;
+}
+
+.m-articles2 h1{
+    font-size:50px;
+    font-weight:lighter;
+}
+
+.m-articles2 h3{
+    font-size:30px;
+    font-weight:lighter;
+    color:darkgrey;
+}
+
+#m-position-image-c1 {
+    width:90%;
+}
+
+.m-colonne-row-articles-spe2 h3,
+.m-colonne-row-articles2 h3{
+    font-size:20px;
+}
+
+.m-colonne-row-articles-spe2 a,
+.m-colonne-row-articles2 a{
+    text-decoration: none;
+}
+
+.m-colonne-row-articles-spe2 h3:hover,
+.m-colonne-row-articles2 h3:hover{
+    color:#14CA9A;
+}
+
+.m-overlay2 {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: 84%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding-top:2%;
+    padding-bottom:2%;
+    text-align: center;
+}
+
+.m-container-articles:hover .m-overlay2{
+  opacity: 1;
+} 
+
+@media (max-width:1120px){
+    .m-articles2,.m-colonne-articles{
+        display: flex;
+        flex-direction: column;
+    }
+    .m-chine-row{flex-direction: column;}
+    .m-overlay,.m-overlay2 {width:400px}
+    .m-colonne-row-articles-spe2{
+        margin-left:0%;
+        margin-right:0%;
+    }
+    
+    .m-colonne-row-articles2 img{
+        width:400px;
+        height:200px;
+}
+    .m-colonne-row-articles-spe2 img{
+        width:400px;
+        height:200px; 
+    }
+
+}
+
+@media (max-width:950px){
+    .m-articles2 h1{font-size:45px;}
+    .m-articles2 h3{font-size:25px;}
+}
+
+@media (max-width:850px){
+    .m-articles2 h1{font-size:30px;}
+    .m-articles2 h3{font-size:20px;}
+}
+
+@media (max-width:610px){
+    .m-articles2 h1{font-size:25px;}
+    .m-articles2 h3{font-size:15px;}
+}
+
+/*Corée*/
+
+#m-coree{background: url(images/seoul.jpg)no-repeat center fixed}
