@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#m-banniere{
+    width:auto;
+}
+.m-timelines{
+    padding-top:10%;
+    background:url(images/continent4.png) no-repeat fixed;
+    background-size:cover;
+}
+
+.m-timelines h1{
+    text-align: center;
+    font-size:50px; 
+    margin:2%;
+    color:white;
+    text-shadow:1px 3px 3px black;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -12px;
+  background-color: white;
+  border: 4px solid white;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {left: 0;}
+.right {left: 50%;}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+    background-color: white;
+    padding:2%;
+    position: relative;
+    border-radius: ;
+}
+
+.content span {
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    font-style:italic;
+}
+
+.content h2 {font-family: 'Permanent Marker', cursive;}
+
+.content h3 a{text-decoration: none;color:grey;}
+.content h3 a:hover{color:#E7BE55}
+
+.content h3 {font-size: 13px;}
+
+.content img{
+    width:100%;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.content:hover img {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+  
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+    
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  .right {
+  left: 0%;
+  }
+}

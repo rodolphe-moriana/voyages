@@ -29,7 +29,7 @@ video:focus{
     font-family:sans-serif;
     top: 0;
     position:fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 .m-content h1{
@@ -53,7 +53,7 @@ video:focus{
     text-decoration: none;
 }
 
-#m-monmenu ul li a:hover { background-color:#210B31;}
+#m-monmenu ul li a:hover { background-color:grey;}
  
 #m-monmenu ul ul { display:none; position:absolute;}
 #m-monmenu ul ul.m-niveau2 { top:40px; left:0px; }
@@ -91,7 +91,7 @@ video:focus{
     margin-top:3%;
 }
 
-.m-search-container button:hover {color:#210B31;}
+.m-search-container button:hover {color:grey;}
 
 @media (max-width:799px){
   .m-search-container{display:none;}
@@ -103,7 +103,7 @@ video:focus{
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: #111;

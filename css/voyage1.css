@@ -1,7 +1,11 @@
 
 #myVideo{
-    width:100%;
+    margin-top:10%;
+   
     border: none;
 }
 
-iframe{border:none;}
+#hey{
+    width:100vh;
+    height:1000px;
+}
