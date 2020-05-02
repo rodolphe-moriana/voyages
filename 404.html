@@ -3,7 +3,8 @@
 
 <head>
     <title> 404 - Error </title>
-    <link type="text/css" rel="stylesheet" href="css/voyages.css">
+    <link rel="stylesheet" href="css/voyages.css">
+    <link rel="stylesheet" href="fa.css">
     <link href="https://fonts.googleapis.com/css?family=Chewy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Knewave&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
@@ -13,7 +14,176 @@
 <body>
 
     <header>
-        
+        <nav id="m-monmenu" class="m-content">
+            <div id="mySidenav" class="m-sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="voyages.html"><i class="fas fa-home"></i> ACCUEIL</a>
+                <a class="m-dropdown-btn"><i class="fas fa-user-friends"></i> LA TEAM <i class="fa fa-caret-down"></i></a>
+                    <div class="m-dropdown-container">
+                        <a class="m-dropdown-btn" href="#">RODOLPHE</a>
+                            <div class="m-dropdown-container">
+                                <a href="#">ESPAGNE</a>
+                                <a href="#">AUSTRALIE</a>
+                                <a href="#">MAROC</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="#">GREG</a>
+                            <div class="m-dropdown-container">
+                                <a href="#">CANADA</a>
+                                <a href="#">BRESIL</a>
+                                <a href="#">MAROC</a>
+                            </div>
+                        <a class="m-dropdown-btn">MARINE</a>
+                            <div class="m-dropdown-container">
+                                <a href="voyages1.html#m-islande">ISLANDE</a>
+                                <a href="#">CHINE</a>
+                                <a href="#">COREE</a>
+                            </div>
+                    </div>
+                <a class="m-dropdown-btn"><i class="fas fa-globe-americas"></i> CONTINENTS <i class="fa fa-caret-down"></i></a>
+                    <div class="m-dropdown-container">
+                        <a class="m-dropdown-btn" href="#">AMERIQUE DU NORD</a>
+                            <div class="m-dropdown-container">
+                                <a href="#">CANADA</a>
+                                <a href="#">ETATS-UNIS</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="#">AMERIQUE DU SUD</a>
+                            <div class="m-dropdown-container">
+                                <a href="#">BRESIL</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="#">EUROPE</a>
+                            <div class="m-dropdown-container">
+                                <a href="#">ISLAND</a>
+                                <a href="#">ESPAGNE</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="#">AFRIQUE</a>
+                            <div class="m-dropdown-container">
+                                <a href="#">MAROC</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="#">ASIE</a>
+                            <div class="m-dropdown-container">
+                                <a href="#">JAPON</a>
+                                <a href="#">COREE</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="#">OCEANIE</a>
+                            <div class="m-dropdown-container">
+                                <a href="#">AUSTRALIE</a>
+                            </div>
+                    </div>
+                <a href="voyages-contact.html"><i class="fas fa-address-book"></i> CONTACT</a>
+            </div>
+            <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+            <script>
+                var dropdown = document.getElementsByClassName("m-dropdown-btn");
+                var i;
+
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var dropdownContent = this.nextElementSibling;
+                  if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                  } else {
+                  dropdownContent.style.display = "block";
+                  }
+                  });
+                }
+            </script>
+            <div><h1>TRAVEL</h1></div>
+            <div>
+            <ul class="m-niveau1">
+                <li><a href="#"><i class="fas fa-home"></i> ACCUEIL</a></li>
+                <li>
+                    <a href="#"><i class="fas fa-user-friends"></i> LA TEAM</a>
+                    <ul class="m-niveau2">
+                        <li>
+                            <a href="#">RODOLPHE</a>
+                            <ul class="m-niveau3">
+                                <li><a href="#">ESPAGNE</a></li>
+                                <li><a href="#">MAROC</a></li>
+                                <li><a href="#">AUSTRALIE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">GREG</a>
+                            <ul class="m-niveau3">
+                                <li><a href="#">BELGIQUE</a></li>
+                                <li><a href="#">CANADA</a></li>
+                                <li><a href="#">USA</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="marine.html">MARINE</a>
+                            <ul class="m-niveau3">
+                                <li><a href="voyages1.html#m-islande">ISLAND</a></li>
+                                <li><a href="#">CHINE</a></li>
+                                <li><a href="#">COREE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="continents.html"><i class="fas fa-globe-americas"></i> CONTINENTS</a>
+                    <ul class="m-niveau2">
+                        <li>
+                            <a href="#">AMERIQUE DU NORD</a>
+                            <ul class="m-niveau3">
+                                <li><a href="#">CANADA</a></li>
+                                <li><a href="#">USA</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">AMERIQUE DU SUD</a>
+                            <ul class="m-niveau3">
+                                <li><a href="#">BRESIL</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">EUROPE</a>
+                            <ul class="m-niveau3">
+                                <li><a href="#">ESPAGNE</a></li>
+                                <li><a href="#">ISLAND</a></li>
+                                <li><a href="#">BELGIQUE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">AFRIQUE</a>
+                            <ul class="m-niveau3">
+                                <li><a href="#">MAROC</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">ASIE</a>
+                            <ul class="m-niveau3">
+                                <li><a href="#">CHINE</a></li>
+                                <li><a href="#">COREE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">OCEANIE</a>
+                            <ul class="m-niveau3">
+                                <li><a href="#">AUSTRALIE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="voyages-contact.html"> <i class="fas fa-address-book"></i> CONTACT</a></li>
+            </ul>
+            </div>
+            <div class="m-search-container">
+                <form action="voayges.html">
+                  <input id="m-button" type="text" placeholder="Rechercher" name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
     </header>
     
     <main id="r-main404">
