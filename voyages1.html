@@ -7,9 +7,10 @@
         <link rel="stylesheet" href="css/voyage1.css">
         <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
         <meta name="author" content="R. Moriana G.Lopez M. Jacquens">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="wilih=device-wilih, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="fa.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -18,29 +19,28 @@
                 <div id="mySidenav" class="m-sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="#"><i class="fas fa-home"></i> ACCUEIL</a>
-                    <a class="m-dropdown-btn" href="#"><i class="fas fa-user-friends"></i> LA TEAM <i class="fa fa-caret-down"></i></a>
+                    <a class="m-dropdown-btn"><i class="fas fa-user-friends"></i> LA TEAM <i class="fa fa-caret-down"></i></a>
                         <div class="m-dropdown-container">
-                            <a class="m-dropdown-btn" href="#">RODOLPHE</a>
+                            <a class="m-dropdown-btn">RODOLPHE</a>
                                 <div class="m-dropdown-container">
                                     <a href="#">ESPAGNE</a>
                                     <a href="#">AUSTRALIE</a>
                                     <a href="#">MAROC</a>
                                 </div>
-                            <a class="m-dropdown-btn" href="#">GREG</a>
+                            <a class="m-dropdown-btn">GREG</a>
                                 <div class="m-dropdown-container">
                                     <a href="#">CANADA</a>
                                     <a href="#">BRESIL</a>
                                     <a href="#">MAROC</a>
                                 </div>
-                            <a class="m-dropdown-btn" href="#">MARINE</a>
+                            <a class="m-dropdown-btn">MARINE</a>
                                 <div class="m-dropdown-container">
-                                    <a href="#">ISLAND</a>
-                                    <a href="#">JAPON</a>
+                                    <a href="voyages1.html#m-islande">ISLAND</a>
                                     <a href="#">CHINE</a>
                                     <a href="#">COREE</a>
                                 </div>
                         </div>
-                    <a class="m-dropdown-btn" href="#"><i class="fas fa-globe-americas"></i> CONTINENTS <i class="fa fa-caret-down"></i></a>
+                    <a class="m-dropdown-btn"><i class="fas fa-globe-americas"></i> CONTINENTS <i class="fa fa-caret-down"></i></a>
                         <div class="m-dropdown-container">
                             <a class="m-dropdown-btn" href="#">AMERIQUE DU NORD</a>
                                 <div class="m-dropdown-container">
@@ -53,7 +53,7 @@
                                 </div>
                             <a class="m-dropdown-btn" href="#">EUROPE</a>
                                 <div class="m-dropdown-container">
-                                    <a href="#">ISLAND</a>
+                                    <a href="voyages1.html#m-islande">ISLAND</a>
                                     <a href="#">ESPAGNE</a>
                                 </div>
                             <a class="m-dropdown-btn" href="#">AFRIQUE</a>
@@ -71,16 +71,16 @@
                                     <a href="#">AUSTRALIE</a>
                                 </div>
                         </div>
-                    <a href="contact-test.html"><i class="fas fa-address-book"></i> CONTACT</a>
+                    <a href="voyages-contact.html"><i class="fas fa-aliress-book"></i> CONTACT</a>
                 </div>
                 <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                 <script>
                 function openNav() {
-                  document.getElementById("mySidenav").style.width = "250px";
+                  document.getElementById("mySidenav").style.wilih = "250px";
                 }
 
                 function closeNav() {
-                  document.getElementById("mySidenav").style.width = "0";
+                  document.getElementById("mySidenav").style.wilih = "0";
                 }
                 </script>
                 <script>
@@ -88,7 +88,7 @@
                     var i;
 
                     for (i = 0; i < dropdown.length; i++) {
-                      dropdown[i].addEventListener("click", function() {
+                      dropdown[i].aliEventListener("click", function() {
                       this.classList.toggle("active");
                       var dropdownContent = this.nextElementSibling;
                       if (dropdownContent.style.display === "block") {
@@ -123,7 +123,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">MARINE</a>
+                                <a href="marine.html">MARINE</a>
                                 <ul class="m-niveau3">
                                     <li><a href="#">ISLAND</a></li>
                                     <li><a href="#">JAPON</a></li>
@@ -133,7 +133,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#"><i class="fas fa-globe-americas"></i> CONTINENTS</a>
+                    <li><a href="continents.html"><i class="fas fa-globe-americas"></i> CONTINENTS</a>
                         <ul class="m-niveau2">
                             <li>
                                 <a href="#">AMERIQUE DU NORD</a>
@@ -152,7 +152,7 @@
                                 <a href="#">EUROPE</a>
                                 <ul class="m-niveau3">
                                     <li><a href="#">ESPAGNE</a></li>
-                                    <li><a href="#">ISLAND</a></li>
+                                    <li><a href="voyages1.html#m-islande">ISLAND</a></li>
                                     <li><a href="#">BELGIQUE</a></li>
                                 </ul>
                             </li>
@@ -178,7 +178,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="contact-test.html"> <i class="fas fa-address-book"></i> CONTACT</a></li>
+                    <li><a href="voyages-contact.html"> <i class="fas fa-aliress-book"></i> CONTACT</a></li>
                 </ul>
                 </div>
                 <div class="m-search-container">
@@ -190,10 +190,263 @@
             </nav>
         </header>
         <main>
-            <div>
-            </div>
-                    <iframe id="myVideo" width="560" height="315" src="https://www.youtube.com/embed/CtNo1z_fcoE?autoplay=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <section class="m-banniere-islande">
+                <img src="css/images/banniere-islande1.jpg" alt="">
+            </section>
+            <div class="m-organisation-page">
+                <section class="m-articles-dispo">
+                    <div id="m-islande" class="m-main-article">
+                        <h2>Organiser son voyage en Islande</h2>
+                        <img src="css/images/aurores.jpg" alt="aurores boréales en Islande"> <br><br>
+                        <blockquote cite="https://generationvoyage.fr/endroits-visiter-islande/">
+                            <p>
+                                "Rocher perdu dans l’océan Atlantique à quelques kilomètres de l’océan arctique, l’Islande – littéralement terre de glace – est un État insulaire perché aux confins septentrionaux de l’Europe. Le pays est situé entre le Groenland et la Norvège, géographiquement plus proche du continent américain mais historiquement et culturellement rattaché à l’Europe. 365 620 habitants vivent en Islande, sur une superficie totale de 102 775 km², soit une densité de seulement 3 habitants par km². La capitale, Reykjavik concentre la majorité de la population islandaise. Destination touristique majeure depuis quelques années – la fréquentation touristique de l’Islande ne cesse de croître -, le pays a attiré 1,8 millions de visiteurs en 2016 et 2,3 millions en 2017. Il faut dire que le pays a tout pour séduire : la vie nocturne de Reykjavik, les fjords et les icebergs, les cascades, les sources d’eau chaude, l’observation des baleines, les mosaïques de couleurs rendant les paysages si surréalistes qu’on les croirait comme « photoshopés », une nature incroyablement vaste où randonner en étant comme seul au monde, les aurores boréales et les volcans actifs.
 
+                                Entre tout ces paysages naturels offrant des panoramas uniques au monde, il semble bien difficile de savoir où aller, que voir et que faire en Islande ! Voici un guide estimatif des plus beaux sites à voir pour visiter l’Islande !"
+                            </p><br>
+                            <footer>
+                                <span>— Samuel Métairie —</span>
+                                <br><cite><a href="https://generationvoyage.fr/endroits-visiter-islande/">Les 12 plus beaux endroits à visiter en Islande</a></cite>
+                            </footer><br>
+                        </blockquote>
+                        <h2>Passer derrière Seljalandsfoss</h2>
+                        <img src="css/images/Seljalandsfoss.jpg" alt="Seljalandsfoss"> <br><br>
+                        <blockquote cite="https://generationvoyage.fr/endroits-visiter-islande/#9-passer-derriere-seljalandsfoss">
+                            <p>
+                                "A 28 kilomètres de Skogafoss, vous trouverez les chutes de Seljalandsfoss. Il paraît qu’un guerrier Viking y serait passé derrière : l’imposante chute de Seljalandsfoss est un mur d’eau projetant dans le vide ses gerbes à 65 mètres de hauteur. C’est l’une des cascades les plus visitées d’Islande car on peut se balader derrière le rideau d’eau sans risquer d’être blessé ou noyé. Le sol, en raison de l’humidité permanente, demeure très glissant.
+
+                                Gare aux chutes (non pas d’eau, mais de vous-même, cette fois-ci) ! La cascade étant orientée plein-ouest, le meilleur moment pour visiter Seljalandsfoss est le crépuscule, quand les rayons du soleil sombrant dans les ténèbres, transpercent la cascade et offrent à ses hôtes un spectacle magique."
+                            </p><br>
+                            <footer>
+                                <span>— Samuel Métairie —</span>
+                                <br><cite><a href="https://generationvoyage.fr/endroits-visiter-islande/#9-passer-derriere-seljalandsfoss">Les 12 plus beaux endroits à visiter en Islande</a></cite>
+                            </footer><br>
+                        </blockquote>
+                        <h2>Les geysers à Geysir</h2>
+                        <img src="css/images/geysir-hot-spring.jpg" alt="Les geysers à Geysir"> <br><br>
+                        <blockquote cite="https://generationvoyage.fr/endroits-visiter-islande/#6-les-geysers-a-geysir">
+                            <p>
+                                "C’est l’un des sites naturels les plus connus du pays. Si vous venez visiter Geysir, vous verrez le geyser Strokkur, qui jaillit ses gerbes d’eau jusqu’à 20 mètres au dessus du sol toutes les 5 à 8 minutes. Le grand geyser lui, ne jaillit plus que deux à trois fois par jour bien que ce soit le plus célèbre du monde."
+                            </p><br>
+                            <footer>
+                                <span>— Samuel Métairie —</span>
+                                <br><cite><a href="https://generationvoyage.fr/endroits-visiter-islande/#6-les-geysers-a-geysir">Les 12 plus beaux endroits à visiter en Islande</a></cite>
+                            </footer><br>
+                        </blockquote>
+                        <h2>La plage de Reynisfjara</h2>
+                        <img src="css/images/Reynisfjara-Beach-Iceland.jpg" alt="Reynisfjara-Beach"> <br><br>
+                        <blockquote cite="https://www.naturephotographie.com/islande/souvenirs-dislande/">
+                            <p>
+                                " <span>POURQUOI DU SABLE NOIR ?</span>
+                                Alors que les sables de la plupart des plages du monde sont de couleur blanche ou dorée, les plages de sable noir sont beaucoup plus rares en raison de la spécificité de leur formation. Le sable est créé lorsque les roches sont érodées en minuscules fragments. (Par définition, une plage est simplement une collection d’innombrables roches minuscules).
+
+                                La raison pour laquelle le sable de Reynisfjara est noir (comme beaucoup de plages en Islande) est qu’il est formé de roches volcaniques fortement érodées qui sont noires. Elles ont été formées à partir de lave refroidie qui devient noire et durcit. La roche volcanique la plus commune en Islande est le basalte. "
+                            </p><br>
+                            <footer>
+                                <span>— Philippe Sainte-Laudy —</span>
+                                <br><cite><a href="https://www.naturephotographie.com/islande/souvenirs-dislande/">Souvenirs d'Islande</a></cite>
+                            </footer><br>
+                        </blockquote>
+                        <h2>La cascade de Skogafoss</h2>
+                        <img src="css/images/Skogafoss.jpg" alt="La cascade de Skogafoss"> <br><br>
+                        <blockquote cite="https://generationvoyage.fr/endroits-visiter-islande/#8-la-cascade-de-skogafoss">
+                            <p>
+                                "Allez visiter les chutes de Skogafoss si, manifestement, vous tournez en rond pour savoir que faire en Islande de plus. Cernées par la verdure qui nous ferait rappeler les vastes étendues d’Irlande, la cascade Skogafoss – qui signifie « chutes de la forêt » – offre un rideau d’eau impénétrable de 60 mètres de haut. Facile d’accès, on peut néanmoins s’en approcher de très près pour profiter de ce spectacle naturel assourdissant."
+                            </p><br>
+                            <footer>
+                                <span>— Samuel Métairie —</span>
+                                <br><cite><a href="https://generationvoyage.fr/endroits-visiter-islande/#8-la-cascade-de-skogafoss">Les 12 plus beaux endroits à visiter en Islande</a></cite>
+                            </footer><br>
+                        </blockquote>
+                        <h2> La lagune glaciaire Jökulsárlón</h2>
+                        <img src="css/images/jokulsarlon-islande.jpg" alt="Le Jökulsárlón"> <br><br>
+                        <blockquote cite="https://generationvoyage.fr/endroits-visiter-islande/#1-la-lagune-glaciaire-jokulsarlon">
+                            <p>
+                                "Jökulsárlón signifie littéralement « lagune du glacier », et est le plus grand des lacs proglaciaires du pays. La lagune se trouve sur la côte sud, entre Höfn et le parc Vatnajökull.
+
+                                De nombreux blocs de glace se détachent du glacier – de la langue du Breiðamerkurjökull – lors du dégel, et se jettent sur les plages de sable noir. Le contraste, entre le bleu turquoise, le bleu foncé de ces mini-icebergs, la couleur jaune issue du sulfure volcanique, le blanc issu de la glace et de la neige et enfin la couleur sombre du sable, est alors singulier. On appelle cela la plage des diamants, tant les blocs de glace échoués sur la plage et enluminés par le soleil font penser à des bijoux. Vous pourrez peut-être même apercevoir des phoques se déplaçant entre les icebergs !"
+                            </p><br>
+                            <footer>
+                                <span>— Samuel Métairie —</span>
+                                <br><cite><a href="https://generationvoyage.fr/endroits-visiter-islande/#1-la-lagune-glaciaire-jokulsarlon">Les 12 plus beaux endroits à visiter en Islande</a></cite>
+                            </footer><br>
+                        </blockquote>
+                    </div>
+                    <div class="list-prevision">
+                        <h2>Préparer & organiser son voyage</h2><br>
+                        <h3>1. A vérifier avant de réserver son billet d’avion</h3>
+                        <ul>
+                            <li class="m-list">Vérifier la validité de son passeport/sa carte d’identité</li>
+                            <li class="m-list">Vérifier si vous avez besoin d’un visa</li>
+                            <li class="m-list">Vérifier si vous avez besoin de vaccins spécifiques</li>
+                            <li class="m-list">Si vous comptez conduire, avez vous besoin d’un permis international ?</li>
+                        </ul><br>
+                        <h3>2. Avant le départ</h3>
+                        <ul>
+                            <li class="m-list">Prendre une assurance voyage</li>
+                            <li class="m-list">Vérifier si avec votre banque si les paiements par carte passeront à l'étranger et comment en limiter les coûts</li>
+                        </ul><br>
+                        <h3>3. Préparer son itinéraire</h3>
+                        <ul>
+                            <li class="m-list">Faire des recherches sur les blogs, guides & réseaux sociaux</li>
+                            <li class="m-list">Comment vais-je me déplacer ? Louer une voiture ou prévoir les déplacements en transport</li>
+                            <li class="m-list">Essayer de réserver les logements autant que possible pour éviter les mauvaises surprises</li>
+                            <li class="m-list">Vérifier si le code de la route est différent</li>
+                        </ul><br>
+                    </div>
+                    <div id="newsletter-spe"><br>
+                        <h2>NEWSLETTER</h2>
+                        <div class="formulaire-newsletter">
+                            <form action="voyage1.html">
+                                <div class="m-form-newsletter">
+                                    <div class="input-direction">
+                                        <label>Nom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction">
+                                        <label>Prénom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction">
+                                        <label>Adresse mail <span>*
+                                        </span></label>
+                                        <input type="email" name="email" required autocomplete="on" />
+                                    </div>
+                                    <div class="m-button-section">
+                                        <input type="submit" name="Sign Up" id="valider" value="S'INSCRIRE" />
+                                        <p><span>*</span> Champs obligatoires</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="form-commentaire">
+                        <h2>Laissez un commentaire</h2>
+                        <p>Votre adresse de messagerie ne sera pas publiée</p><br>
+                        <form action="voyage1.html">
+                            <div class="m-form-newsletter">
+                                <div class="nom-prenom-mail">
+                                    <div class="input-direction m-nom-input">
+                                        <label>Nom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction m-prenom-input">
+                                        <label>Prénom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>  
+                                    <div class="input-direction m-mail-input">
+                                        <label>Adresse mail <span>*
+                                        </span></label>
+                                        <input type="email" name="email" required autocomplete="on" />
+                                    </div>
+                                </div><br>
+                                
+                                <div class="commentaire-input-direction">
+                                    <label>Commentaire <span>*
+                                    </span></label>
+                                    <textarea id="message" name="message" class="field-style" autocomplete="on" required></textarea>
+                                </div>
+                                <div class="m-button-section1">
+                                    <input type="submit" name="Sign Up" id="valider" value="LAISSER UN COMMENTAIRE" />
+                                    <p><span>*</span> Champs obligatoires</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="m-colonne-lateral">
+                    <div class="m-presentation">
+                        <h2>QUI SUIS-JE ? </h2>
+                        <p>Web designer et développeur web je suis passionnée de voyage et je désire partager ma passion avec un maximum de personnes. Pour en lire un peu plus sur moi c'est par <a href="marine.html">ici</a>.</p><br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-OH0kSAgWsU?autoplay=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br><br>
+                    </div>
+                    <div class="selection-articles">
+                        <h2>SUGGESTIONS ARTICLES</h2>
+                        <div class="m-scroll">
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5><br>
+                            
+                        </div>
+                    </div><br>
+                    <div>
+                        <h2>NEWSLETTER</h2>
+                        <div class="formulaire-newsletter">
+                            <form action="voyage1.html">
+                                <div class="m-form-newsletter">
+                                    <div class="input-direction">
+                                        <label>Nom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction">
+                                        <label>Prénom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction">
+                                        <label>Adresse mail <span>*
+                                        </span></label>
+                                        <input type="email" name="email" required autocomplete="on" />
+                                    </div>
+                                    <div class="m-button-section">
+                                        <input type="submit" name="Sign Up" id="valider" value="S'INSCRIRE" />
+                                        <p><span>*</span> Champs obligatoires</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer>
         </footer>
