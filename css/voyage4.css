@@ -1,13 +1,3 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-.r-container{
-    width: 100%;
-    height: 100%;
-}
-
 /* MAIN BACK */
 
 main{
@@ -138,7 +128,7 @@ hr{
     box-shadow: rgb(94, 94, 94) 0 0 50px;
 }
 
-#r-accueil-article-2-droite{
+#r-container-esp-article-2-droite{
     width: 20%;
     border: black outset 3px;
     background-color: rgba(185, 201, 216, 0.877);
@@ -151,17 +141,17 @@ hr{
     transition: all 1s ease;
 }
 
-#r-accueil-article-2-droite{
+#r-container-esp-article-2-droite{
     padding-top: 3%;
 }
 
-#r-accueil-article-2-droite p{
+#r-container-esp-article-2-droite p{
     text-align: center;
     font-size: 1.5em;
     padding: 2%;
 }
 
-#r-accueil-article-2-droite:hover{
+#r-container-esp-article-2-droite:hover{
     -webkit-transform:scale(1.25);
     -moz-transform:scale(1.25);
     -ms-transform:scale(1.25);
@@ -176,7 +166,7 @@ hr{
     display: flex;
 }
 
-#r-accueil-article-3-gauche{
+#r-container-esp-article-3-gauche{
     width: 20%;
     border: black outset 3px;
     background-color: rgba(202, 166, 136, 0.877);
@@ -189,11 +179,11 @@ hr{
     transition: all 1s ease;
 }
 
-#r-accueil-article-3-gauche p{
+#r-container-esp-article-3-gauche p{
     margin-top: 4%;
 }
 
-#r-accueil-article-3-gauche:hover{
+#r-container-esp-article-3-gauche:hover{
     -webkit-transform:scale(1.25);
     -moz-transform:scale(1.25);
     -ms-transform:scale(1.25);
@@ -202,21 +192,21 @@ hr{
     background-color: rgba(231, 199, 177, 0.808);
 }
 
-#r-accueil-article-3-droite{
+#r-container-esp-article-3-droite{
     width: 35%;
     height: 50%;
     margin-top: 5%;
     margin-left: 10%;
 }
 
-#r-accueil-article-3-droite img{
+#r-container-esp-article-3-droite img{
     width: 100%;
     height: 100%;
     border: rgba(0, 0, 0, 0.808) outset 3px;
     box-shadow: rgb(94, 94, 94) 0 0 50px;
 }
 
-#r-accueil-article-3-gauche p{
+#r-container-esp-article-3-gauche p{
     text-align: center;
     font-size: 1.5em;
     padding: 2%;
@@ -229,21 +219,21 @@ hr{
     margin-top: 10%;
 }
 
-#r-accueil-article-4-gauche{
+#r-container-esp-article-4-gauche{
     width: 35%;
     height: 50%;
     margin-top: 5%;
     margin-left: 10%;
 }
 
-#r-accueil-article-4-gauche img{
+#r-container-esp-article-4-gauche img{
     width: 100%;
     height: 100%;
     border: rgba(0, 0, 0, 0.808) outset 3px;
     box-shadow: rgb(94, 94, 94) 0 0 50px;
 }
 
-#r-accueil-article-4-droite{
+#r-container-esp-article-4-droite{
     width: 20%;
     border: black outset 3px;
     background-color: rgba(169, 185, 139, 0.877);
@@ -256,13 +246,13 @@ hr{
     transition: all 1s ease;
 }
 
-#r-accueil-article-4-droite p{
+#r-container-esp-article-4-droite p{
     text-align: center;
     font-size: 1.5em;
     margin-top: 15%;
 }
 
-#r-accueil-article-4-droite:hover{
+#r-container-esp-article-4-droite:hover{
     -webkit-transform:scale(1.25);
     -moz-transform:scale(1.25);
     -ms-transform:scale(1.25);

@@ -12,3 +12,50 @@
 video:focus{
     outline: none;
 }
+
+iframe:focus{
+    outline: none;
+}
+
+#r-main404{
+    background-repeat:no-repeat;
+    background-color: #F7F7F7;
+    font-family: 'Chewy', cursive;
+}
+
+#r-titre404{
+    font-size: 10em;
+    color: black;
+}
+
+#r-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#r-flex2{
+    width: 50%;
+}
+
+#r-flex3{
+    width: 50%;
+    text-align: center;
+    padding-top: 10%;
+}
+
+#r-flex3 h2{
+    font-size: 2em;
+}
+
+#r-flex3 h3{
+    font-size: 1em;
+    margin-top: 2%;
+}
+
+#r-flex3 h2,h3{
+    color: black;
+    padding-right: 2%;
+    font-family: 'Knewave', cursive;
+}
