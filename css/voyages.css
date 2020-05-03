@@ -141,21 +141,73 @@ iframe:focus{
 
 /* ACCUEIL ARTICLE 2 */
 
+#back-accueil-article-2{
+  width: 100%;
+  background-image: url("images/back-accueil-article-2.jpg");
+  background-size: 100%;
+}
+
+#titre-accueil-article-2{
+  font-size: 5em;
+  color: black;
+  text-shadow: grey 0 0 10px;
+  text-align: center;
+  padding-top: 5%;
+}
+
 #accueil-article-2{
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  margin-top: 10%;
 }
 
 .portrait-accueil{
-  width: 25%;
-  height: 500px;
+  position: relative;
+  width: 20%;
+  height: 700px;
   border: black solid 3px;
   box-shadow: black 0 0 50px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .portrait-accueil video{
+  position: absolute;
   width: 100%;
+  height: 100%;
+}
+
+.portrait-accueil p{
+  position: absolute;
+  font-size: 5em;
+  color: white;
+  text-shadow: white 0 0 10px;
+}
+
+.portrait-accueil p:hover{
+  text-shadow: white 0 0 30px;
+}
+
+#accueil-australie{
+  margin-top: 75%;
+  margin-left: 10%;
+}
+
+#accueil-chine,#accueil-maroc{
+  margin-top: 75%;
+  margin-left: 25%;
+}
+
+.portrait-accueil:hover{
+  -webkit-transform:scale(1.10);
+  -moz-transform:scale(1.10);
+  -ms-transform:scale(1.10);
+  -o-transform:scale(1.10);
+  transform:scale(1.10);
 }
 
 /* 404 */
