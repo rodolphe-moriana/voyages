@@ -1,0 +1,316 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Images bannière*/
+
+.m-image-container{
+    max-height:480px;
+}
+
+.cover img{
+    display: flex;
+    position:relative;
+    max-height:480px;
+    width: 100%;
+}
+
+.text{
+    background-color:white;
+    color:black;
+    font-size:3vw;
+    margin: 0 auto;
+    padding:1%; 
+    width:50%;
+    text-align: center;
+    position:absolute;
+    top:10%;
+    right:2%;
+    mix-blend-mode: screen;
+}
+
+/*Articles*/
+
+.article1{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin:5%;
+    text-align: justify;
+}
+
+
+.article1 h2 {
+    font-size:40px;
+    margin-bottom:3%;
+    text-align:center;
+}
+
+.article1 h3, .article2 h3{
+    text-transform: capitalize;
+    font-weight:bold;
+    font-size:30px;
+}
+
+.article1 p span {font-style:italic;}
+
+.article1 a,.article2 a {
+    text-decoration: none;
+    color:lightgray;
+}
+
+.article1 a:hover, .article2 a:hover{color:cornflowerblue}
+
+
+.article2{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    margin:5%;
+    text-align: justify;
+}
+
+.article2-img{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.article2-img img{width:49%}
+
+.article2 p span {font-weight:bold;}
+
+#longji-height{height:500px;}
+
+
+
+/*Galerie d'images*/
+
+.m-galerie-image {
+    display: flex;
+    flex-direction: column;
+    margin:5%;
+}
+
+.m-scroll-galerie{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+
+
+.m-scroll-galerie::-webkit-scrollbar {width: 12px;height: 10px;}
+ 
+.m-scroll-galerie::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+.m-scroll-galerie::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: white; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.m-scroll-galerie::-webkit-scrollbar-thumb:window-inactive {background: grey;}
+
+
+.m-div-image{overflow:hidden;}
+
+.m-colonne-galerie{
+    display: flex;
+    flex-direction:row;
+    min-width:100%;
+}
+
+.m-colonne-galerie1, .m-colonne-galerie3, .m-colonne-galerie6{width:35%;}
+
+.m-colonne-galerie1, .m-colonne-galerie3, .m-colonne-galerie5, .m-colonne-galerie6{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.m-colonne-galerie1 img, .m-colonne-galerie3 img, .m-colonne-galerie7 img {margin-bottom:2%;}
+
+#chine1, #chine8{
+    width:100%;
+    height:300px;
+}
+
+#chine2,
+#chine3,
+#chine6,
+#chine7,
+#chine4 img,
+#chine5 img{
+    height:140px;
+}
+
+
+
+.m-colonne-galerie2,.m-colonne-galerie4,.m-colonne-galerie7{
+    display:flex;
+    flex-direction: row;
+}
+
+
+#chine2, #chine6{
+    margin-right:1%;
+    width:95%;
+}
+#chine3, #chine7{
+    margin-left:1%;
+    width:95%;
+}
+
+#chine4 img, #chine5 img{width:100%;}
+
+.m-colonne-galerie3 img{width:100%;}
+
+#chine4, #chine5 {
+    margin-left:2%;
+}
+
+#chine4 img, #chine5 img{margin-bottom:5%;}
+
+#chine5{margin-right:2%;}
+
+
+
+
+
+
+
+
+.m-container {
+  position: relative;
+  width: 100%;
+}
+
+.m-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    
+}
+
+.m-galerie-image img{
+     transition: .5s ease;
+ filter: brightness(100%);
+-webkit-filter: brightness(100%);
+}
+
+.m-galerie-image img:hover{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    transform: scale(1.2);
+}
+
+
+.m-image img{
+ filter: brightness(100%);
+-webkit-filter: brightness(100%);
+}
+
+.m-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.m-container:hover .m-image {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    transform: scale(1.2);
+}
+
+.m-container:hover .m-middle {
+  opacity: 1;
+
+}
+
+.m-text {
+  background-color: black;
+    opacity:0.6;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.m-text a {
+    text-decoration:none; 
+    color:white;
+}
+
+.m-text a:hover{color:cornflowerblue}
+
+
+
+
+#m-espace-galerie{
+    margin-right:1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1250px){
+    .text{top:20%;}
+}
+
+@media (max-width:899px){
+    .article1 img, .article2 img,#longji-height{height:300px;}
+    .article1 h2{font-size:25px;}
+  }
+
+@media (max-width:550px){
+    .article1 img, .article2 img,#longji-height{height:200px;}
+    .article1 h2{font-size:25px;}
+  }
+
+
+
+#chine1, #chine8{
+    width:100%;
+    height:300px;
+}
+
+#chine2,
+#chine3,
+#chine6,
+#chine7,
+#chine4 img,
+#chine5 img{
+    height:140px;
+}

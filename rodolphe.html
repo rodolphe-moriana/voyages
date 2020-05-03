@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Rodolphe</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/voyages.css">
+        <link rel="stylesheet" href="css/rodolphe.css">
+        <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+        <meta name="author" content="R. Moriana G.Lopez M. Jacquens">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="fa.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav id="m-monmenu" class="m-content">
+                <div id="mySidenav" class="m-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="voyages.html"><i class="fas fa-home"></i> ACCUEIL</a>
+                    <a class="m-dropdown-btn"><i class="fas fa-user-friends"></i> LA TEAM <i class="fa fa-caret-down"></i></a>
+                        <div class="m-dropdown-container">
+                            <a class="m-dropdown-btn" href="rodolphe.html">RODOLPHE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage4.html">ESPAGNE</a>
+                                    <a href="voyage5.html">AUSTRALIE</a>
+                                    <a href="voyage6.html">MAROC</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="greg.html">GREG</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage9.html">BELGIQUE</a>
+                                    <a href="voyage8.html">ETATS-UNIS</a>
+                                    <a href="voyage7.html">CANADA</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="marine.html">MARINE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyages1.html">ISLANDE</a>
+                                    <a href="voyages2.html">CHINE</a>
+                                </div>
+                        </div>
+                    <a class="m-dropdown-btn"><i class="fas fa-globe-americas"></i> CONTINENTS <i class="fa fa-caret-down"></i></a>
+                        <div class="m-dropdown-container">
+                            <a class="m-dropdown-btn" href="404.html">AMERIQUE DU NORD</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage7.html">CANADA</a>
+                                    <a href="voyage8.html">ETATS-UNIS</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">AMERIQUE DU SUD</a>
+                                <div class="m-dropdown-container">
+                                    <a href="404.html">BRESIL</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">EUROPE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage1.html">ISLANDE</a>
+                                    <a href="voyage4.html">ESPAGNE</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">AFRIQUE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage6.html">MAROC</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">ASIE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage2.html">CHINE</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">OCEANIE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage5.html">AUSTRALIE</a>
+                                </div>
+                        </div>
+                    <a href="voyages-contact.html"><i class="fas fa-address-book"></i>CONTACT</a>
+                </div>
+                <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+                }
+    
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                }
+                </script>
+                <script>
+                    var dropdown = document.getElementsByClassName("m-dropdown-btn");
+                    var i;
+    
+                    for (i = 0; i < dropdown.length; i++) {
+                      dropdown[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var dropdownContent = this.nextElementSibling;
+                      if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                      } else {
+                      dropdownContent.style.display = "block";
+                      }
+                      });
+                    }
+                </script>
+                <div id="r-top-header-link"><a href="voyages.html"><h1>TRAVEL</h1></a></div>
+                <div>
+                <ul class="m-niveau1">
+                    <li><a href="voyages.html"><i class="fas fa-home"></i> ACCUEIL</a></li>
+                    <li>
+                        <a href="404.html"><i class="fas fa-user-friends"></i> LA TEAM</a>
+                        <ul class="m-niveau2">
+                            <li>
+                                <a href="rodolphe.html">RODOLPHE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage4.html">ESPAGNE</a></li>
+                                    <li><a href="voyage6.html">MAROC</a></li>
+                                    <li><a href="voyage5.html">AUSTRALIE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="greg.html">GREG</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage9.html">BELGIQUE</a></li>
+                                    <li><a href="voyage8.html">ETATS-UNIS</a></li>
+                                    <li><a href="voyage7.html">CANADA</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="marine.html">MARINE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage1.html">ISLANDE</a></li>
+                                    <li><a href="voyage2.html">CHINE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="continents.html"><i class="fas fa-globe-americas"></i> CONTINENTS</a>
+                        <ul class="m-niveau2">
+                            <li>
+                                <a href="404.html">AMERIQUE DU NORD</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage7.html">CANADA</a></li>
+                                    <li><a href="voyage8.html">ETATS-UNIS</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">AMERIQUE DU SUD</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="404.html">BRESIL</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">EUROPE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage4.html">ESPAGNE</a></li>
+                                    <li><a href="voyage1.html">ISLANDE</a></li>
+                                    <li><a href="voyage9.html">BELGIQUE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">AFRIQUE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage6.html">MAROC</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">ASIE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage2.html">CHINE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">OCEANIE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage5.html">AUSTRALIE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="voyages-contact.html"> <i class="fas fa-address-book"></i> CONTACT</a></li>
+                </ul>
+                </div>
+                <div class="m-search-container">
+                    <form action="404.html">
+                      <input id="m-button" type="text" placeholder="Rechercher" name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main class="m-corps">
+            <section class="m-profil">
+                <div class="m-photo flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="css/images/rodolphe.png" alt="photo-rodolphe">
+                            <div class="m-flipcardrecto">
+                                <h2>Rodolphe Moriana</h2><br>
+                                <h3>22 ans</h3>
+                            </div> 
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Signe astro</h3><br>
+                            <img src="css/images/taureau.png" alt="astro-taureau">
+                            <h3>Hobbies</h3><br>
+                            <i class="fa fa-beer"></i>
+                            <i class="fa fa-plane"></i>
+                            <i class="fa fa-wrench"></i>
+                            <h3>Suivez moi sur</h3><br>
+                            <a href="https://www.facebook.com/rodolphemoriana"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.linkedin.com/in/rodolphe-moriana/"><i class="fab fa-linkedin-square"></i></a>
+                            <a href="https://www.instagram.com/rodolphe.moriana/?hl=fr"><i class="fab fa-instagram-square"></i></a>
+                            <a href="https://github.com/rodolphe-moriana"><i class="fab fa-github-square"></i></a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="m-resume">
+                    <h2>Profil</h2><br>
+                    <h3>Chef de projet Web</h3> <br>
+                    <hr><br>
+                    <p>
+                        Diplômé du Lycée Don Bosco en Sciences et Technologies de l'Industrie et du Développement Durable, j'ai depuis put m'épanouir dans l'esport pendant quelques années ainsi qu'être employé dans diverses boîtes n'ayant aucun rapport à l'informatique. Depuis je ressens le besoin d'optimiser via l'informatique tout ce que je touche.<br><br>
+
+                        Spécialisé dans la gestion de projet web, l'objectif de ce site est pour moi de m'améliorer sur la communication et l'organisation des tâches en équipe. 
+                    </p><br>
+                    <i class="fas fa-envelope-open-text"></i> <a href="mailto:rodolphe.moriana@laplateforme.io">rodolphe.moriana@laplateforme.io</a><br><br>
+                    <i class="fas fa-address-book"></i>  + 33 (0)6 24 86 45 55
+                    <div class="m-down">
+                        <a href="rodolphe.html#paysage-article"><i class="fas fa-arrow-circle-down"></i></a>
+                    </div>
+                </div>
+                <div class="m-skill flip-card2">
+                    <div class="flip-card-inner2">
+                        <div class="flip-card-front2">
+                            <h2>Compétences principales</h2><br>
+                            <h3>Gestion de projets</h3> <br>
+                            <p>ORGANISATION</p>
+                            <div class="container">
+                                <div class="skills organisation">90%</div>
+                            </div>
+                            <p>COMMUNICATION</p>
+                            <div class="container">
+                                <div class="skills communication">80%</div>
+                            </div>
+                            <p>DESIGN</p>
+                            <div class="container">
+                                <div class="skills design">70%</div>
+                            </div><br>
+                            <hr><br>
+                            <h3>Programmation</h3><br>
+                            <p>HTML</p>
+                            <div class="container">
+                                <div class="skills html">90%</div>
+                            </div>
+                            <p>CSS</p>
+                            <div class="container">
+                                <div class="skills css">80%</div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back2">
+                            <h2>Compétences transversales</h2><br>
+                            <h3>Langues</h3> <br>
+                            <p>ANGLAIS</p>
+                            <div class="container">
+                                <div class="skills organisation">100%</div>
+                            </div>
+                            <p>ESPAGNOL</p>
+                            <div class="container">
+                                <div class="skills design">70%</div>
+                            </div><br>
+                            <hr><br>
+                            <h3>Marketing</h3><br>
+                            <p>AUDIT SITE & RS</p>
+                            <div class="container">
+                                <div class="skills communication">80%</div>
+                            </div>
+                            <p>ETUDES DE MARCHE</p>
+                            <div class="container">
+                                <div class="skills communication">80%</div>
+                            </div> 
+                            <p>CAMPAGNE DE COMMUNICATION</p>
+                            <div class="container">
+                                <div class="skills design">70%</div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="paysage-article" class="m-paysage">
+                <h1>ESPAGNE</h1>
+                <p></p>
+            </section>
+            <section class="m-articles">
+                <div>
+                    <h1>Découvrez ses destinations phares </h1>
+                    <h3> Consultez les articles détaillants les sites accessibles seul</h3><br>
+                </div>
+                <div class="m-colonne-articles">
+                    <div class="m-colonne-row-articles">
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/rodolphe-espagne-1.jpg">
+                            <img class="m-image-articles" src="css/images/rodolphe-espagne-1.jpg" alt="Barcelone" height="200">
+                            </a>
+                            <a class="m-overlay" href=""><h3>Barcelone</h3></a>
+                        </div><span class="m-espace"></span>
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/rodolphe-espagne-2.jpg">
+                            <img class="m-image-articles" src="css/images/rodolphe-espagne-2.jpg" alt="Punta Nariga" height="200">
+                            </a>
+                            <a class="m-overlay" href=""><h3>Punta Nariga</h3></a>
+                        </div><span class="m-espace"></span>
+                    </div>
+                    <div class="m-colonne-row-articles-spe">
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/rodolphe-espagne-3.jpg">
+                            <img class="m-image-articles" src="css/images/rodolphe-espagne-3.jpg" alt="Théâtre Romain">
+                            </a>
+                            <a class="m-overlay" href=""><h3>Théâtre Romain</h3></a>
+                        </div><span class="m-espace"></span>
+                    </div>
+                    <div class="m-colonne-row-articles">
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/rodolphe-espagne-4.jpg">
+                            <img class="m-image-articles" src="css/images/rodolphe-espagne-4.jpg" alt="San Sebastian" height="200">
+                            </a>
+                            <a class="m-overlay" href=""><h3>San Sebastian</h3></a>
+                        </div><span class="m-espace"></span>
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/rodolphe-espagne-5.jpg" >
+                            <img class="m-image-articles" src="css/images/rodolphe-espagne-5.jpg" alt="Andalousie" height="200">
+                            </a>
+                            <a class="m-overlay" href=""><h3>Andalousie</h3></a>
+                        </div>
+                    </div>         
+                </div> 
+            </section>
+            <section id="m-chine" class="m-paysage">
+                <h1>AUSTRALIE</h1>
+                <p></p>
+            </section>
+            <section class="m-articles2">
+                <div>
+                    <h1>Découvrez ses destinations phares </h1>
+                    <h3> Consultez les articles détaillants les sites accessibles seul</h3><br>
+                </div>
+                <div class="m-colonne-articles">
+                    <div class="m-column-g m-colonne-row-articles2">
+                        <div class="m-colonne-row-articles-spe2">
+                            <div class="m-container-articles">
+                                <a target="_blank" href="css/images/rodolphe-australie-1.jpg">
+                                <img class="m-image-articles" src="css/images/rodolphe-australie-1.jpg" alt="Plage">
+                                </a>
+                                <a class="m-overlay" href=""><h3>Plage</h3></a>
+                            </div>
+                        </div><span class="m-espace2"></span>
+                        <div class="m-chine-row">
+                            <div class="m-container-articles">
+                                <a target="_blank" href="css/images/rodolphe-australie-2.jpg">
+                                <img class="m-image-articles" src="css/images/rodolphe-australie-2.jpg" alt="Island Archway" height="200">
+                                </a>
+                                <a class="m-overlay2" href=""><h3>Island Archway</h3></a>
+                            </div><span class="m-espace"></span>
+                            <div class="m-container-articles">
+                                <a target="_blank" href="css/images/rodolphe-australie-3.jpg">
+                                <img class="m-image-articles" src="css/images/rodolphe-australie-3.jpg" alt="Port Campbell Natonial Park Victoria" height="200">
+                                </a>
+                                <a class="m-overlay2" href=""><h3>Port Campbell Natonial Park Victoria</h3></a>
+                            </div><span class="m-espace"></span>
+                        </div>
+                    </div><span class="m-espace3"></span>
+                    <div class="m-column-d m-colonne-row-articles2">
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/rodolphe-australie-4.jpg">
+                            <img class="m-image-articles" src="css/images/rodolphe-australie-4.jpg" alt="Nora Phare" height="200">
+                            </a>
+                            <a class="m-overlay" href=""><h3>Nora Phare</h3></a>
+                        </div><span class="m-espace4"></span>
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/rodolphe-australie-5.jpg" >
+                            <img class="m-image-articles" src="css/images/rodolphe-australie-5.jpg" alt="Sydney's Opera" height="200">
+                            </a>
+                            <a class="m-overlay" href=""><h3>Sydney's Opera</h3></a>
+                        </div><span class="m-espace4"></span>
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/rodolphe-australie-6.jpg" >
+                            <img class="m-image-articles" src="css/images/rodolphe-australie-6.jpg" alt="Melbourne" height="200">
+                            </a>
+                            <a class="m-overlay" href=""><h3>Melbourne</h3></a>
+                        </div>
+                    </div>         
+                </div> 
+            </section>
+            <section id="m-coree" class="m-paysage">
+                <h1>MAROC</h1>
+                <p></p>
+            </section>
+            <section class="m-articles2">
+                <div>
+                    <h1>Découvrez ses destinations phares </h1>
+                    <h3> Consultez les articles détaillants les sites accessibles seul</h3><br>
+                </div>
+                <div class="m-colonne-articles">
+                    <div class="m-column-d m-colonne-row-articles2">
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/rodolphe-maroc-1.jpg">
+                            <img class="m-image-articles" src="css/images/rodolphe-maroc-1.jpg" alt="Paysage de Rochers" height="200">
+                            </a>
+                            <a class="m-overlay" href=""><h3>Paysage de Rochers</h3></a>
+                        </div><span class="m-espace4"></span>
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/rodolphe-maroc-2.jpg" >
+                            <img class="m-image-articles" src="css/images/rodolphe-maroc-2.jpg" alt="Dakhla" height="200">
+                            </a>
+                            <a class="m-overlay" href=""><h3>Dakhla</h3></a>
+                        </div><span class="m-espace4"></span>
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/rodolphe-maroc-3.jpg" >
+                            <img class="m-image-articles" src="css/images/rodolphe-maroc-3.jpg" alt="Oasis Maroc" height="200">
+                            </a>
+                            <a class="m-overlay" href=""><h3>Oasis Maroc</h3></a>
+                        </div>
+                    </div><span class="m-espace3"></span>  
+                    <div class="m-column-g m-colonne-row-articles2">
+                        <div class="m-colonne-row-articles-spe2">
+                            <div class="m-container-articles">
+                                <a target="_blank" href="css/images/rodolphe-maroc-4.jpg">
+                                <img class="m-image-articles" src="css/images/rodolphe-maroc-4.jpg" alt="Casablanca">
+                                </a>
+                                <a class="m-overlay" href=""><h3>Casablanca</h3></a>
+                            </div>
+                        </div><span class="m-espace2"></span>
+                        <div class="m-chine-row">
+                            <div class="m-container-articles">
+                                <a target="_blank" href="css/images/rodolphe-maroc-5.jpg">
+                                <img class="m-image-articles" src="css/images/rodolphe-maroc-5.jpg" alt="Vallée du Drâa" height="200">
+                                </a>
+                                <a class="m-overlay2" href=""><h3>Vallée du Drâa</h3></a>
+                            </div>  
+                            <div class="m-container-articles">
+                                <a target="_blank" href="css/images/rodolphe-maroc-6.jpg">
+                                <img class="m-image-articles" src="css/images/rodolphe-maroc-6.jpg" alt="Marrakech" height="200">
+                                </a>
+                                <a class="m-overlay2" href=""><h3>Marrakech</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+        </main>
+        <footer>
+            <div class="m-footer">
+                <div class="m-rs">
+                    <div class="m-ligne1">
+                        <a href="https://www.facebook.com/"><p><i class="fab fa-facebook-square"></i> FACEBOOK</p></a>
+                        <a href="https://www.twitter.com/"><p><i class="fab fa-twitter-square"></i> TWITTER</p></a>
+                    </div>
+                    <div class="m-ligne2">
+                        <a href="https://www.instagram.com/"><p><i class="fab fa-instagram-square"></i> INSTAGRAM</p></a>
+                        <a href="https://www.pinterest.com/"><p><i class="fab fa-pinterest-square"></i> PINTEREST</p></a>
+                    </div>  
+                </div>
+                <div class="video-article-newsletter">
+                    <div class="m-video">
+                        <h2>Dernière vidéo</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iMUS7wlhboM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="m-newsletter">
+                        <h2>Newsletter</h2>
+                        <div class="formulaire-newsletter">
+                            <form action="voyage1.html">
+                                <div class="m-form-newsletter">
+                                    <div class="input-direction">
+                                        <label>Nom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction">
+                                        <label>Prénom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction">
+                                        <label>Adresse mail <span>*
+                                        </span></label>
+                                        <input type="email" name="email" required autocomplete="on" />
+                                    </div>
+                                    <div class="m-button-section">
+                                        <input type="submit" name="Sign Up" id="valider" value="S'INSCRIRE" />
+                                        <p><span>*</span> Champs obligatoires</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="m-articles-footer">
+                        <h2>Derniers articles</h2>
+                        <h3>ISLAND</h3>
+                        <img src="css/images/aurores.jpg">
+                        <h4><span>par</span> Marine Jacquens</h4>
+                        <h5><a href="">Lire l'article >>></a></h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+

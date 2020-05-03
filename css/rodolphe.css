@@ -1,0 +1,557 @@
+.m-corps{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Profil*/
+
+.m-profil{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding:5%;
+    text-align: justify;
+    margin-top:6%;
+    min-height:500px;
+}
+
+.m-photo{ 
+    flex-direction: column;
+    width:30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.m-photo img{
+    width: 100%;
+}
+
+.m-flipcardrecto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin:15%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back i{
+    font-size:40px;
+    color:#2C5D90;
+    margin:1%;
+}
+
+.flip-card-back i:hover{color:white}
+
+.flip-card-back a{text-decoration: none;}
+
+
+
+
+
+
+
+
+.m-resume{
+    flex-direction:column;
+    padding:2%;
+    width:30%;
+}
+
+.m-resume a {
+text-decoration:none; 
+color:black;
+}
+
+.m-resume i{
+    color:#2196F3;
+    font-size:20px;
+}
+
+.m-resume a:hover {
+    text-decoration:underline; 
+    color:#2196F3;
+}
+
+.m-down{
+    font-size:55px;
+    text-align: center;
+}
+
+.m-down i{
+    font-size:40px;
+    text-align: center;
+    color:black;
+}
+
+.m-down i:hover{
+
+}
+
+.m-down a:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+.m-skill{
+    flex-direction: column;
+    width:30%;
+    padding:2%;
+}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+
+.organisation {width: 90%; background-color: #4CAF50;}
+.communication {width: 80%; background-color: #f44336;}
+.design {width: 70%; background-color: #2196F3;}
+.html {width: 90%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+
+
+
+
+
+.flip-card2 {
+  background-color: transparent;
+  width: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front2, .flip-card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front2 {}
+
+.flip-card-back2 {
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back2 i{
+    font-size:40px;
+    color:#2C5D90;
+    margin:1%;
+}
+
+.flip-card-back i:hover{color:white}
+
+.flip-card-back a{text-decoration: none;}
+
+@media (max-width:1075px){
+  .m-profil{
+      flex-wrap:wrap;
+      height:2200px;
+      align-items:center;
+  }
+    .m-photo,.m-resume,.m-skill{width:50%;}
+    .m-resume{height:450px;}
+    .m-photo{height:800px;}
+    .m-skill{height:500px;}
+    .m-profil h2, .m-profil h3{text-align:center;}
+}
+
+@media (max-width:900px){
+
+    .m-photo,.m-resume,.m-skill{width:60%;}
+    .m-photo{height:650px;}
+}
+
+@media (max-width:700px){
+    .m-photo{height:500px;}
+}
+
+
+@media (max-width:500px){
+    .m-photo,.m-resume,.m-skill{width:80%;}
+    .m-skill,.m-photo{height:600px;}
+}
+
+@media (max-width:1200px){
+    .m-down{display: none}
+}
+
+
+/*Articles*/
+
+/*Island*/
+
+.m-paysage{
+    background:url(images/rodolphe-espagne-main.jpg)no-repeat center fixed;
+    color:white;
+    font-size:50px;
+    align-items: center;
+    display:flex;
+    justify-content: center; 
+    background-size: cover;
+    padding-top:1%;
+    min-height:550px;
+}
+
+.m-articles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    color:black;
+    font-size:50px;
+    margin:5%;
+}
+
+.m-articles h1{
+    font-size:50px;
+    font-weight:lighter;
+}
+
+.m-articles h3{
+    font-size:30px;
+    font-weight:lighter;
+    color:darkgrey;
+}
+
+.m-colonne-articles{
+    display:flex;
+    flex-direction:row;
+    align-items: flex-start;
+}
+
+.m-colonne-row-articles{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+}
+
+.m-colonne-row-articles img{width:100%;}
+.m-colonne-row-articles-spe h3,
+.m-colonne-row-articles h3{
+    font-size:20px;
+}
+
+.m-colonne-row-articles-spe a,
+.m-colonne-row-articles a{
+    text-decoration: none;
+}
+
+.m-colonne-row-articles-spe h3:hover,
+.m-colonne-row-articles h3:hover{
+    color:#14CA9A;
+}
+
+.m-colonne-row-articles-spe{
+    margin-right:2%;
+    margin-left:2%;
+    width:40%;
+}
+
+.m-colonne-row-articles-spe img{width:100%;height:350px;}
+
+.m-container-articles {
+    position: relative;
+} 
+
+.m-container-articles:hover .m-overlay{
+  opacity: 1;
+} 
+
+.m-image-articles {
+    display: block;
+    width: 100%;
+}
+
+.m-overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding-top:2%;
+    padding-bottom:2%;
+    text-align: center;
+}
+
+.m-espace{
+    margin-top:4%;
+    margin-bottom:4%;
+}
+
+@media (max-width:1120px){
+    .m-articles,.m-colonne-articles{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .m-overlay{width:400px}
+    .m-articles{}
+    .m-colonne-row-articles-spe{
+        margin-left:0%;
+        margin-right:0%;
+    }
+    
+    .m-colonne-row-articles img{
+        width:400px;
+        height:200px;
+}
+    .m-colonne-row-articles-spe img{
+        width:400px;
+        height:200px; 
+    }
+
+}
+
+@media (max-width:950px){
+    .m-articles h1{font-size:45px;}
+    .m-articles h3{font-size:25px;}
+}
+
+@media (max-width:850px){
+    .m-articles h1{font-size:30px;}
+    .m-articles h3{font-size:20px;}
+}
+
+@media (max-width:610px){
+    .m-articles h1{font-size:25px;}
+    .m-articles h3{font-size:15px;}
+}
+
+/*Chine*/
+
+#m-chine{
+    background:url(images/rodolphe-australie-main.jpg)no-repeat center fixed;
+    color:white;
+    font-size:50px;
+    align-items: center;
+    display:flex;
+    justify-content: center; 
+    background-size: cover;
+    padding-top:1%;
+    min-height:550px;
+}
+
+.m-chine-row{
+    display: flex;
+    flex-direction:row;
+    width:auto;
+}
+
+.m-column-g{width: 100%;}
+.m-column-d{width:50%;}
+.m-column-d img{height:219px;}
+
+.m-chine-row img{
+    width:90%;
+    height: 218px;
+}
+
+.m-colonne-row-articles2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.m-colonne-row-articles-spe2{
+    width:auto;
+}
+
+.m-colonne-row-articles-spe2 img{width:100%;}
+
+.m-espace2{
+    margin-top:2%;
+    margin-bottom:1%;
+}
+
+.m-espace3{
+    margin-right:1%;
+    margin-left:1%;
+}
+
+.m-espace4{
+    margin-top:3.5%;
+    margin-bottom:3%;
+}
+
+.m-articles2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    color:black;
+    font-size:50px;
+    margin:5%;
+}
+
+.m-articles2 h1{
+    font-size:50px;
+    font-weight:lighter;
+}
+
+.m-articles2 h3{
+    font-size:30px;
+    font-weight:lighter;
+    color:darkgrey;
+}
+
+.m-colonne-row-articles-spe2 h3,
+.m-colonne-row-articles2 h3{
+    font-size:20px;
+}
+
+.m-colonne-row-articles-spe2 a,
+.m-colonne-row-articles2 a{
+    text-decoration: none;
+}
+
+.m-colonne-row-articles-spe2 h3:hover,
+.m-colonne-row-articles2 h3:hover{
+    color:#14CA9A;
+}
+
+.m-overlay2 {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: 90%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding-top:2%;
+    padding-bottom:2%;
+    text-align: center;
+}
+
+.m-container-articles:hover .m-overlay2{
+  opacity: 1;
+} 
+
+@media (max-width:1120px){
+    .m-articles2,.m-colonne-articles{
+        display: flex;
+        flex-direction: column;
+    }
+    .m-chine-row{flex-direction: column;}
+    .m-overlay,.m-overlay2 {width:400px}
+    .m-colonne-row-articles-spe2{
+        margin-left:0%;
+        margin-right:0%;
+    }
+    
+    .m-colonne-row-articles2 img{
+        width:400px;
+        height:200px;
+}
+    .m-colonne-row-articles-spe2 img{
+        width:400px;
+        height:200px; 
+    }
+
+}
+
+@media (max-width:950px){
+    .m-articles2 h1{font-size:45px;}
+    .m-articles2 h3{font-size:25px;}
+}
+
+@media (max-width:850px){
+    .m-articles2 h1{font-size:30px;}
+    .m-articles2 h3{font-size:20px;}
+}
+
+@media (max-width:610px){
+    .m-articles2 h1{font-size:25px;}
+    .m-articles2 h3{font-size:15px;}
+}
+
+
+
+/*Corée*/
+
+#m-coree{
+    background:url(images/rodolphe-maroc-main.jpg)no-repeat center fixed;
+    color:white;
+    font-size:50px;
+    align-items: center;
+    display:flex;
+    justify-content: center; 
+    background-size: cover;
+    padding-top:1%;
+    min-height:550px;
+}
+

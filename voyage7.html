@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CANADA</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/voyage7.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/voyages.css">
+        <link rel="stylesheet" href="fa.css">
+    </head>
+
+    <body>
+        <header>
+            <nav id="m-monmenu" class="m-content">
+                <div id="mySidenav" class="m-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="voyages.html"><i class="fas fa-home"></i> ACCUEIL</a>
+                    <a class="m-dropdown-btn"><i class="fas fa-user-friends"></i> LA TEAM <i class="fa fa-caret-down"></i></a>
+                        <div class="m-dropdown-container">
+                            <a class="m-dropdown-btn" href="rodolphe.html">RODOLPHE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage4.html">ESPAGNE</a>
+                                    <a href="voyage5.html">AUSTRALIE</a>
+                                    <a href="voyage6.html">MAROC</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="greg.html">GREG</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage9.html">BELGIQUE</a>
+                                    <a href="voyage8.html">ETATS-UNIS</a>
+                                    <a href="voyage7.html">CANADA</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="marine.html">MARINE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyages1.html">ISLANDE</a>
+                                    <a href="voyages2.html">CHINE</a>
+                                </div>
+                        </div>
+                    <a class="m-dropdown-btn"><i class="fas fa-globe-americas"></i> CONTINENTS <i class="fa fa-caret-down"></i></a>
+                        <div class="m-dropdown-container">
+                            <a class="m-dropdown-btn" href="404.html">AMERIQUE DU NORD</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage7.html">CANADA</a>
+                                    <a href="voyage8.html">ETATS-UNIS</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">AMERIQUE DU SUD</a>
+                                <div class="m-dropdown-container">
+                                    <a href="404.html">BRESIL</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">EUROPE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage1.html">ISLANDE</a>
+                                    <a href="voyage4.html">ESPAGNE</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">AFRIQUE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage6.html">MAROC</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">ASIE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage2.html">CHINE</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">OCEANIE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage5.html">AUSTRALIE</a>
+                                </div>
+                        </div>
+                    <a href="voyages-contact.html"><i class="fas fa-address-book"></i>CONTACT</a>
+                </div>
+                <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+                }
+    
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                }
+                </script>
+                <script>
+                    var dropdown = document.getElementsByClassName("m-dropdown-btn");
+                    var i;
+    
+                    for (i = 0; i < dropdown.length; i++) {
+                      dropdown[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var dropdownContent = this.nextElementSibling;
+                      if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                      } else {
+                      dropdownContent.style.display = "block";
+                      }
+                      });
+                    }
+                </script>
+                <div id="r-top-header-link"><a href="voyages.html"><h1>TRAVEL</h1></a></div>
+                <div>
+                <ul class="m-niveau1">
+                    <li><a href="voyages.html"><i class="fas fa-home"></i> ACCUEIL</a></li>
+                    <li>
+                        <a href="404.html"><i class="fas fa-user-friends"></i> LA TEAM</a>
+                        <ul class="m-niveau2">
+                            <li>
+                                <a href="rodolphe.html">RODOLPHE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage4.html">ESPAGNE</a></li>
+                                    <li><a href="voyage6.html">MAROC</a></li>
+                                    <li><a href="voyage5.html">AUSTRALIE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="greg.html">GREG</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage9.html">BELGIQUE</a></li>
+                                    <li><a href="voyage8.html">ETATS-UNIS</a></li>
+                                    <li><a href="voyage7.html">CANADA</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="marine.html">MARINE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage1.html">ISLANDE</a></li>
+                                    <li><a href="voyage2.html">CHINE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="continents.html"><i class="fas fa-globe-americas"></i> CONTINENTS</a>
+                        <ul class="m-niveau2">
+                            <li>
+                                <a href="404.html">AMERIQUE DU NORD</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage7.html">CANADA</a></li>
+                                    <li><a href="voyage8.html">ETATS-UNIS</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">AMERIQUE DU SUD</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="404.html">BRESIL</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">EUROPE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage4.html">ESPAGNE</a></li>
+                                    <li><a href="voyage1.html">ISLANDE</a></li>
+                                    <li><a href="voyage9.html">BELGIQUE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">AFRIQUE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage6.html">MAROC</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">ASIE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage2.html">CHINE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">OCEANIE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage5.html">AUSTRALIE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="voyages-contact.html"> <i class="fas fa-address-book"></i> CONTACT</a></li>
+                </ul>
+                </div>
+                <div class="m-search-container">
+                    <form action="404.html">
+                      <input id="m-button" type="text" placeholder="Rechercher" name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="container-greg" id="banner-canada-greg">
+                <img src="css/images/banner-canada.png" alt="canada-banner">
+            </section>
+
+            <div id="title-canada"><h1>Le CANADA</h1></div>
+
+            <section class="container-greg" id="canada-article-1-greg">
+                <div id="canada-article-1-texte-greg">
+                   <p>Le Canada fait partie de ses pays que je rêve de visiter, voire d'y vivre !
+                    Pourquoi ? Car j'en ai toujours entendu le plus grand bien, que ce soit sur ses citoyens ou le niveau de vie qu'on peut y a vu et bien sûr c'est un pays que je trouve magnifiques et pleins de ressources avec de multiples paysages différents..</p>
+                </div>
+            </section>
+
+            <section class="container-greg" id="canada-article-2-greg">
+
+                <div id="canada-article-2-greg-droite">
+                    <img src="css/images/Que-faire-au-Canada.jpg" alt="que faire au canada">
+                 </div>
+                <div id="canada-article-2-greg-gauche">
+                   <p>Que faire au Canada ? Vous vous posez la question ? J'ai cherchez pour vous !</p>
+                </div>
+
+            </section>
+
+            <div id="montreal-video-greg"><iframe width="600" height="400" src="https://www.youtube.com/embed/PAfRjnKg8CE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+            <section class="container-greg" id="canada-article-3-greg">
+                <div id="canada-article-3-texte-greg">
+                    <h1>Visiter le Canada : les incontournables</h1>
+                    <h2>1. Montréal</h2><br>
+                    <p>On commence notre top des choses à voir au Canada par la ville de Montréal, un passage pratiquement obligatoire lors de votre voyage!</p>
+                    <p>Ville très cosmopolite et multiculturelle, je peux vous dire qu’on trouve à Montréal une foule d’activités à faire!</p>
+                    <p>Voici les lieux d’intérêts que vous ne devez surtout pas manquer :</p>
+                    <ul>
+                        <li>Le plateau Mont-Royal avec ses maisons typiques aux façades colorées et longs escaliers extérieur</li>
+                        <li>Le parc du Mont-Royal et son fameux belvédère pour bénéficier d’un panorama sur toute la ville</li>
+                        <li>Le Vieux Montréal, le quartier historique</li>
+                        <li>La basilique Notre-Dame de Montréal et son intérieur impressionnant</li>
+                        <li>Le Vieux Port pour faire une promenade le long du fleuve Saint-Laurent</li>
+                        <li>L’oratoire Saint-Joseph, un imposant édifice situé sur un des côtés du Mont-Royal</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="container-greg" id="canada-article-0-greg">
+                <span id="canada-img1-greg" class="target">
+                </span>
+                <span id="canada-img2-greg" class="target">
+                </span>
+                <span id="canada-img3-greg" class="target">
+                </span>
+                <span id="canada-img4-greg" class="target">
+                </span>
+                <div class="cadre_diapo">
+                <div class="interieur_diapo">
+                <div>
+                <img src="css/images/canada1.jpg" alt="canada1">
+                </div>
+                <div>
+                <img src="css/images/canada2.jpg" alt="canada2">
+                </div>
+                <div>
+                <img src="css/images/canada3.jpg" alt="canada3">
+                </div>
+                <div>
+                <img src="css/images/canada4.png" alt="canada4">
+                </div>
+                </div>
+                <ul class="navigation_diapo">
+                <li>
+                <a href="#canada-img1-greg">
+                <img src="css/images/canada1.jpg" alt="canada1">
+                </a>
+                </li>
+                <li>
+                <a href="#canada-img2-greg">
+                <img src="css/images/canada2.jpg" alt="canada2">
+                </a>
+                </li>
+                <li>
+                <a href="#canada-img3-greg">
+                <img src="css/images/canada3.jpg" alt="canada3">
+                </a>
+                </li>
+                <li>
+                <a href="#canada-img4-greg">
+                <img src="css/images/canada4.png" alt="canada4">
+                </a>
+                </li>
+                </ul>
+                </div>
+            </section>
+
+            <section class="container-greg" id="canada-article-4-greg">
+
+            <div id="canada-article-4-img-greg">
+                <img src="css/images/belluga.jpg" alt="belluga">
+            </div>
+            
+            <div id="canada-article-4-texte-greg">
+                <h2>2. Observer des baleines au Canada</h2><br>
+                <p>Une des activités les plus mémorables à expérimenter lors de votre séjour au Canada, c’est d’aller observer les baleines.</p>
+                <p>Le meilleur endroit pour tenter de les apercevoir c’est à l’embouchure du fjord du Saguenay, à Tadoussac plus précisément. Les baleines y trouvent de quoi se nourrir en abondance et y reviennent donc chaque année.</p>
+                <p>A Tadoussac, vous aurez le choix entre plusieurs types de croisières: en gros bateau, en zodiac et même en kayak pour les plus courageux.</p>
+                <p>La période la plus favorable pour ce type d’observation est de mi-mai à Octobre, mais les baleines sont en plus grand nombre en Septembre et en Octobre, donc si vous avez la chance de vous y trouver à ce moment-là vous pourrez certainement en voir.</p>
+            </div>
+            </section>
+
+
+
+            <footer>
+                <div class="m-footer">
+                    <div class="m-rs">
+                        <div class="m-ligne1">
+                            <a href="https://www.facebook.com/"><p><i class="fab fa-facebook-square"></i> FACEBOOK</p></a>
+                            <a href="https://www.twitter.com/"><p><i class="fab fa-twitter-square"></i> TWITTER</p></a>
+                        </div>
+                        <div class="m-ligne2">
+                            <a href="https://www.instagram.com/"><p><i class="fab fa-instagram-square"></i> INSTAGRAM</p></a>
+                            <a href="https://www.pinterest.com/"><p><i class="fab fa-pinterest-square"></i> PINTEREST</p></a>
+                        </div>  
+                    </div>
+                    <div class="video-article-newsletter">
+                        <div class="m-video">
+                            <h2>Dernière vidéo</h2>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/iMUS7wlhboM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="m-newsletter">
+                            <h2>Newsletter</h2>
+                            <div class="formulaire-newsletter">
+                                <form action="voyage1.html">
+                                    <div class="m-form-newsletter">
+                                        <div class="input-direction">
+                                            <label>Nom</label>
+                                            <input type="text" id="name" name="name">
+                                        </div>
+                                        <div class="input-direction">
+                                            <label>Prénom</label>
+                                            <input type="text" id="name" name="name">
+                                        </div>
+                                        <div class="input-direction">
+                                            <label>Adresse mail <span>*
+                                            </span></label>
+                                            <input type="email" name="email" required autocomplete="on" />
+                                        </div>
+                                        <div class="m-button-section">
+                                            <input type="submit" name="Sign Up" id="valider" value="S'INSCRIRE" />
+                                            <p><span>*</span> Champs obligatoires</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="m-articles-footer">
+                            <h2>Derniers articles</h2>
+                            <h3>ISLAND</h3>
+                            <img src="css/images/aurores.jpg">
+                            <h4><span>par</span> Marine Jacquens</h4>
+                            <h5><a href="">Lire l'article >>></a></h5>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+    </body>
+</html>

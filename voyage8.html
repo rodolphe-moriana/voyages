@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ETATS-UNIS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/voyage8.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bric-a-brac.woff">
+        <link rel="stylesheet" href="css/voyages.css">
+        <link rel="stylesheet" href="fa.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <nav id="m-monmenu" class="m-content">
+                <div id="mySidenav" class="m-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="voyages.html"><i class="fas fa-home"></i> ACCUEIL</a>
+                    <a class="m-dropdown-btn"><i class="fas fa-user-friends"></i> LA TEAM <i class="fa fa-caret-down"></i></a>
+                        <div class="m-dropdown-container">
+                            <a class="m-dropdown-btn" href="rodolphe.html">RODOLPHE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage4.html">ESPAGNE</a>
+                                    <a href="voyage5.html">AUSTRALIE</a>
+                                    <a href="voyage6.html">MAROC</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="greg.html">GREG</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage9.html">BELGIQUE</a>
+                                    <a href="voyage8.html">ETATS-UNIS</a>
+                                    <a href="voyage7.html">CANADA</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="marine.html">MARINE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyages1.html">ISLANDE</a>
+                                    <a href="voyages2.html">CHINE</a>
+                                </div>
+                        </div>
+                    <a class="m-dropdown-btn"><i class="fas fa-globe-americas"></i> CONTINENTS <i class="fa fa-caret-down"></i></a>
+                        <div class="m-dropdown-container">
+                            <a class="m-dropdown-btn" href="404.html">AMERIQUE DU NORD</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage7.html">CANADA</a>
+                                    <a href="voyage8.html">ETATS-UNIS</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">AMERIQUE DU SUD</a>
+                                <div class="m-dropdown-container">
+                                    <a href="404.html">BRESIL</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">EUROPE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage1.html">ISLANDE</a>
+                                    <a href="voyage4.html">ESPAGNE</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">AFRIQUE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage6.html">MAROC</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">ASIE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage2.html">CHINE</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">OCEANIE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage5.html">AUSTRALIE</a>
+                                </div>
+                        </div>
+                    <a href="voyages-contact.html"><i class="fas fa-address-book"></i>CONTACT</a>
+                </div>
+                <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+                }
+    
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                }
+                </script>
+                <script>
+                    var dropdown = document.getElementsByClassName("m-dropdown-btn");
+                    var i;
+    
+                    for (i = 0; i < dropdown.length; i++) {
+                      dropdown[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var dropdownContent = this.nextElementSibling;
+                      if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                      } else {
+                      dropdownContent.style.display = "block";
+                      }
+                      });
+                    }
+                </script>
+                <div id="r-top-header-link"><a href="voyages.html"><h1>TRAVEL</h1></a></div>
+                <div>
+                <ul class="m-niveau1">
+                    <li><a href="voyages.html"><i class="fas fa-home"></i> ACCUEIL</a></li>
+                    <li>
+                        <a href="404.html"><i class="fas fa-user-friends"></i> LA TEAM</a>
+                        <ul class="m-niveau2">
+                            <li>
+                                <a href="rodolphe.html">RODOLPHE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage4.html">ESPAGNE</a></li>
+                                    <li><a href="voyage6.html">MAROC</a></li>
+                                    <li><a href="voyage5.html">AUSTRALIE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="greg.html">GREG</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage9.html">BELGIQUE</a></li>
+                                    <li><a href="voyage8.html">ETATS-UNIS</a></li>
+                                    <li><a href="voyage7.html">CANADA</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="marine.html">MARINE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage1.html">ISLANDE</a></li>
+                                    <li><a href="voyage2.html">CHINE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="continents.html"><i class="fas fa-globe-americas"></i> CONTINENTS</a>
+                        <ul class="m-niveau2">
+                            <li>
+                                <a href="404.html">AMERIQUE DU NORD</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage7.html">CANADA</a></li>
+                                    <li><a href="voyage8.html">ETATS-UNIS</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">AMERIQUE DU SUD</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="404.html">BRESIL</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">EUROPE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage4.html">ESPAGNE</a></li>
+                                    <li><a href="voyage1.html">ISLANDE</a></li>
+                                    <li><a href="voyage9.html">BELGIQUE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">AFRIQUE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage6.html">MAROC</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">ASIE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage2.html">CHINE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">OCEANIE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage5.html">AUSTRALIE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="voyages-contact.html"> <i class="fas fa-address-book"></i> CONTACT</a></li>
+                </ul>
+                </div>
+                <div class="m-search-container">
+                    <form action="404.html">
+                      <input id="m-button" type="text" placeholder="Rechercher" name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="container-greg" id="banner-usa-greg">
+            </section>
+
+            <section id="article-1-usa-greg">
+                <h1>Etats-Unis & road-trip mythique</h1>
+                <p>
+                    Les États-Unis d’Amérique, appelé aussi le pays de l’Oncle Sam, est une des destination les plus prisées au monde. C’est le rêve américain, quoi ! Des paysages variés, une faune et une biodiversité préservées, une culture « comme dans les films » et ses presque 60 parcs nationaux contribuent amplement à sa renommé internationale. Les USA sont un endroit mythique. Certainement parmi les plus mythiques sur terre. Y faire un road trip, est un must-do !  Rien de tel pour découvrir l’immensité de ce pays… Enfin, il y a aussi le vélo, mais là, mieux vaut avoir des mollets en béton !
+                </p>
+                <p>De l’Alaska à l’Oregon, en passant le Texas ou encore la Floride, être itinérant c’est jouir à fond de la liberté et de ces grands espaces. Quatre fuseaux horaires qui s’étalent sur 50 états américains et presque 10 millions de km² de superficie (c’est le 4ème pays le plus vaste au monde !), les USA offrent une variété d’éco-systèmes uniques au monde.
+                </p>
+            </section>
+
+            <section>
+                <div class='diapo_auto_rwd'>
+                    <input name="diapo" id='slide1' type="radio" class='slide_diapo'>
+                    <input name="diapo" id='slide2' type="radio" class='slide_diapo'>
+                    <input name="diapo" id='slide3' type="radio" class='slide_diapo'>
+                    <input name="diapo" id='lance-diapo' type="radio" checked>
+                    <input name="diapo" id='pause1' type="radio" class='pause_diapo'>
+                    <input name="diapo" id='pause2' type="radio" class='pause_diapo'>
+                    <input name="diapo" id='pause3' type="radio" class='pause_diapo'>
+                    <ul>
+                    <li><img src="css/images/longroad4.jpg" alt="66"></li>
+                    <li class='image1 slide_diapo'><img src='css/images/longroad1.jpg' alt="longroad1"></li>
+                    <li class='image2 slide_diapo'><img src="css/images/longroad2.png" alt="longroad2"></li>
+                    <li class='image3 slide_diapo'><img src='css/images/longroad3.jpg' alt="longroad3"></li>
+                    </ul>
+                    <div class='precedent'>
+                    <label class='image1' for='slide1'></label>
+                    <label class='image2' for='slide2'></label>
+                    <label class='image3' for='slide3'></label>
+                    </div>
+                    <div class='suivant'>
+                    <label class='image1' for='slide1'></label>
+                    <label class='image2' for='slide2'></label>
+                    <label class='image3' for='slide3'></label>
+                    </div>		
+                    </div>
+                    
+            </section>
+
+
+            <section id="article-2-usa-greg">
+            <div>
+                <div>
+                <h1>Quand partir pour un road trip aux USA</h1>
+                <p>
+                    C’est à mon sens, la première question à se poser si vous envisagez un road trip sur le territoire américain. Enfin, pour être précis, je dirai qu’il faut réfléchir à la chose en même temps que l’itinéraire de votre road trip mais aussi en fonction du prix du billet d’avion pour y aller. Gardez cette idée en tête. Évidemment, vous pouvez partir aux USA toute l’année, on est d’accord. Existe t-il une meilleure période pour visiter les grands lacs ? L’immensité de l’Alaska ? La Sierra Nevada ? Le Cap Cod ? Pour autant, selon vos envies de destination, il sera nécessaire de se caler sur une « saison idéale », car visiter le Grand Canyon au mois de décembre, c’est très différent que de la faire en plein mois d’aout… (enfin surtout beaucoup plus froid…oui oui, il neige dans cette zone très fréquentée l’hiver !).
+                </p>
+                <p>
+                    Le pays est immense et les possibilités de circuit aux USA sont presque à l’infini. Vous pouvez tout à faire voir du désert, des montagnes, des ours, des dauphins, des forêts à perte de vue, tout ça dans le même voyage. Vous pouvez aussi décider de couper en plusieurs road trip. Pour les amoureux des parcours hors des sentiers battus et des zones reculées, il y a de quoi se faire plaisir aussi ! Tout le monde n’est pas obligé de se rendre à Mesa Verde, au Lac Powell ou Tahoe, le majestueux Arches National Park, etc.
+                </p>
+                <p>
+                    Côté climat, voilà ce qu’il faut retenir selon moi : le Sud des États-Unis est dans l’ensemble bien plus chaud que le Nord. Partir au Texas ou en Louisiane en plein été relève presque du suicide ! Je ne vais pas vous donner les températures et précipitations moyennes sur l’ensemble des États-Unis. Il y a des sites très bien faits pour ça, notamment ou-quand-partir par exemple. Commencez donc par regarder la météo des zones qui vous intéresse. Il est fort probable que vous n’ayez pas la possibilité de choisir vos vacances, par exemple par rapport à vos congés.
+                </p>
+                <p>
+                    Sachez que la majorité des touristes prévoit un road trip sur le sol américain entre Mai et Septembre (en gros) et qu’une très grosse majorité se retrouve en Juillet/Aout. Ce sont les périodes les plus chaudes évidemment. Il faut aussi savoir que même en plein été, il peut faire très froid la nuit dans certaines zones. Après avoir passé plusieurs nuits à zéro degré à Yellowstone ou Grand Téton, je vous le confirme. Attention donc à la saison par rapport aux endroits où vous souhaitez aller. A l’inverse, certains lieux (Utah, Arizona, Nouveau Mexique, etc.) peuvent être très chaud la journée.
+                </p>
+            </div>
+
+            <div id="flex-img">
+            <div id="flex-img-1">
+                <img src="css/images/article-2-img-1.jpg" alt="img1art2">
+
+            </div>
+            <div id="flex-img-2">
+                <img src="css/images/article-2-img-2.jpg" alt="img2art2">
+            </div>
+            </div>   
+                <p>
+                    Pour résumer, je conseille :               
+                </p>
+                <ul>
+                    <li>En Hiver : vous pouvez par exemple opter pour road trip aux USA sur la côte est des États-Unis (sous la neige) ou la côte Ouest, à la découverte des grandes villes américaines et leurs alentours (New York, San Francisco, etc.). Visiter New-York sous la neige ou le Golden Gate doit être assez sympa en hiver je pense ! Cela peut-être aussi l’occasion pour les fans de sport d’hiver de découvrir le Nord-Ouest des USA pour un peu de ski ou de snowboard, comme l’Utah, l’Idaho ou le Montana. Dans l’ensemble, sur les états classiques des USA pour un road trip, il pourra y faire froid, voire très froid, et une minorité des gens se lanceront dans la visite de Monument Valley, le Grand Canyon ou Brice Canyon sous la neige. Attention aussi le long de la côte pacifique, il ne fait pas si chaud que l’on croit ! Un des gros avantages, c’est qu’il y aura beaucoup moins de monde évidemment. Sachez que :</li>
+                    <li>La majorité des parcs de l’ouest américain seront ouverts.</li>
+                    <li>C’est la saison idéale pour visiter les zones les plus chaudes (Vegas, la mythique vallée de la mort/Death Valley, etc.).</li>
+                    <li>Certains parcs pourront être totalement ou partiellement fermés (Yellowstone, Yosemite, Sequoia National Park, etc.).</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li>L’été : vous pouvez envisager de partir n’importe où dans les États-Unis. La seule limite je dirais sera la chaleur écrasante la journée dans certaines zones. Je pense en particulier à l’Arizona, l’Utah et tout le Sud des États-Unis (Texas, etc.). Autre point négatif, le monde sur place. Vous ne serez jamais seul pour observer toutes ces merveilles, et il faut s’attendre à voir des touristes. Sachez que certains parcs ne sont ouverts que durant cette période (Yellowstone), ou du moins c’est durant cette saison que vous n’allez pas mourir de froid normalement (Glacier).
+                    </li>
+                    <p>A mon sens, je conseillerai de réaliser un voyage aux États-Unis durant les intersaisons, soit les mois de Mai/Juin et Septembre/Octobre. Beaucoup n’auront pas le choix (comme moi) à cause des vacances scolaires par exemple et une majorité réaliseront le road trip dans l’Ouest Américain entre San Francisco et Las Vegas. Ce n’est donc pas une mauvaise idée d’éviter les grosses chaleurs et les touristes à mon sens, non ? Voyager hors saison, en plein hiver permettra de se balader en étant quasiment seul au monde. Vous allez aussi vous loger pour pas trop cher (baisse des prix).</p>
+                </ul>
+            </div>
+        </div>
+            </section>
+
+
+
+        </main>
+
+        <footer>
+            <div class="m-footer">
+                <div class="m-rs">
+                    <div class="m-ligne1">
+                        <a href="https://www.facebook.com/"><p><i class="fab fa-facebook-square"></i> FACEBOOK</p></a>
+                        <a href="https://www.twitter.com/"><p><i class="fab fa-twitter-square"></i> TWITTER</p></a>
+                    </div>
+                    <div class="m-ligne2">
+                        <a href="https://www.instagram.com/"><p><i class="fab fa-instagram-square"></i> INSTAGRAM</p></a>
+                        <a href="https://www.pinterest.com/"><p><i class="fab fa-pinterest-square"></i> PINTEREST</p></a>
+                    </div>  
+                </div>
+                <div class="video-article-newsletter">
+                    <div class="m-video">
+                        <h2>Dernière vidéo</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iMUS7wlhboM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="m-newsletter">
+                        <h2>Newsletter</h2>
+                        <div class="formulaire-newsletter">
+                            <form action="voyage1.html">
+                                <div class="m-form-newsletter">
+                                    <div class="input-direction">
+                                        <label>Nom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction">
+                                        <label>Prénom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction">
+                                        <label>Adresse mail <span>*
+                                        </span></label>
+                                        <input type="email" name="email" required autocomplete="on" />
+                                    </div>
+                                    <div class="m-button-section">
+                                        <input type="submit" name="Sign Up" id="valider" value="S'INSCRIRE" />
+                                        <p><span>*</span> Champs obligatoires</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="m-articles-footer">
+                        <h2>Derniers articles</h2>
+                        <h3>ISLAND</h3>
+                        <img src="css/images/aurores.jpg">
+                        <h4><span>par</span> Marine Jacquens</h4>
+                        <h5><a href="">Lire l'article >>></a></h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

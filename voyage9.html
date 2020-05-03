@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belgique</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/voyage9.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/voyages.css">
+        <link rel="stylesheet" href="fa.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <nav id="m-monmenu" class="m-content">
+                <div id="mySidenav" class="m-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="voyages.html"><i class="fas fa-home"></i> ACCUEIL</a>
+                    <a class="m-dropdown-btn"><i class="fas fa-user-friends"></i> LA TEAM <i class="fa fa-caret-down"></i></a>
+                        <div class="m-dropdown-container">
+                            <a class="m-dropdown-btn" href="rodolphe.html">RODOLPHE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage4.html">ESPAGNE</a>
+                                    <a href="voyage5.html">AUSTRALIE</a>
+                                    <a href="voyage6.html">MAROC</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="greg.html">GREG</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage9.html">BELGIQUE</a>
+                                    <a href="voyage8.html">ETATS-UNIS</a>
+                                    <a href="voyage7.html">CANADA</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="marine.html">MARINE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyages1.html">ISLANDE</a>
+                                    <a href="voyages2.html">CHINE</a>
+                                </div>
+                        </div>
+                    <a class="m-dropdown-btn"><i class="fas fa-globe-americas"></i> CONTINENTS <i class="fa fa-caret-down"></i></a>
+                        <div class="m-dropdown-container">
+                            <a class="m-dropdown-btn" href="404.html">AMERIQUE DU NORD</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage7.html">CANADA</a>
+                                    <a href="voyage8.html">ETATS-UNIS</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">AMERIQUE DU SUD</a>
+                                <div class="m-dropdown-container">
+                                    <a href="404.html">BRESIL</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">EUROPE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage1.html">ISLANDE</a>
+                                    <a href="voyage4.html">ESPAGNE</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">AFRIQUE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage6.html">MAROC</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">ASIE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage2.html">CHINE</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="404.html">OCEANIE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyage5.html">AUSTRALIE</a>
+                                </div>
+                        </div>
+                    <a href="voyages-contact.html"><i class="fas fa-address-book"></i>CONTACT</a>
+                </div>
+                <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+                }
+    
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                }
+                </script>
+                <script>
+                    var dropdown = document.getElementsByClassName("m-dropdown-btn");
+                    var i;
+    
+                    for (i = 0; i < dropdown.length; i++) {
+                      dropdown[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var dropdownContent = this.nextElementSibling;
+                      if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                      } else {
+                      dropdownContent.style.display = "block";
+                      }
+                      });
+                    }
+                </script>
+                <div id="r-top-header-link"><a href="voyages.html"><h1>TRAVEL</h1></a></div>
+                <div>
+                <ul class="m-niveau1">
+                    <li><a href="voyages.html"><i class="fas fa-home"></i> ACCUEIL</a></li>
+                    <li>
+                        <a href="404.html"><i class="fas fa-user-friends"></i> LA TEAM</a>
+                        <ul class="m-niveau2">
+                            <li>
+                                <a href="rodolphe.html">RODOLPHE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage4.html">ESPAGNE</a></li>
+                                    <li><a href="voyage6.html">MAROC</a></li>
+                                    <li><a href="voyage5.html">AUSTRALIE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="greg.html">GREG</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage9.html">BELGIQUE</a></li>
+                                    <li><a href="voyage8.html">ETATS-UNIS</a></li>
+                                    <li><a href="voyage7.html">CANADA</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="marine.html">MARINE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage1.html">ISLANDE</a></li>
+                                    <li><a href="voyage2.html">CHINE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="continents.html"><i class="fas fa-globe-americas"></i> CONTINENTS</a>
+                        <ul class="m-niveau2">
+                            <li>
+                                <a href="404.html">AMERIQUE DU NORD</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage7.html">CANADA</a></li>
+                                    <li><a href="voyage8.html">ETATS-UNIS</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">AMERIQUE DU SUD</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="404.html">BRESIL</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">EUROPE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage4.html">ESPAGNE</a></li>
+                                    <li><a href="voyage1.html">ISLANDE</a></li>
+                                    <li><a href="voyage9.html">BELGIQUE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">AFRIQUE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage6.html">MAROC</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">ASIE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage2.html">CHINE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="404.html">OCEANIE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyage5.html">AUSTRALIE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="voyages-contact.html"> <i class="fas fa-address-book"></i> CONTACT</a></li>
+                </ul>
+                </div>
+                <div class="m-search-container">
+                    <form action="404.html">
+                      <input id="m-button" type="text" placeholder="Rechercher" name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+            <main>
+
+            <section id="title-belgique-greg" class="container-greg">
+        
+                <h1>La Belgique</h1>
+
+
+                <div id="title-center-img-greg">
+                <img src="css/images/belgiqueimg1.jpg" alt="bimg1">
+                </div>
+
+            </section>
+             
+            <section id="presentation-belgique-greg" class="container-greg">
+            <div>
+                <p>Voyager en Belgique. Entre les trois régions, Bruxelles-Capitale, la Wallonie et la Flandre, j’ai décidé de vous emmener découvrir la Belgique au travers de 3 villes.</p>
+            </div>
+
+                <div><h1>Histoire de la Belgique</h1></div>
+
+                <div>
+                    
+                    <p>Je vous propose un rapide résumé de la Belgique pour vous informer quelque peu sur le pays que vous allez prochainement visiter (si vous n’êtes pas belge).</p>
+                    <p>La Belgique est un très jeune pays, créé en 1830, dont l’hymne national est la Brabançonne et la devise est « L’union fait la force » en français. Il se situe entre les Pays-Bas, l’Allemagne, le Luxembourg et la France. Comme vous le savez certainement, la Belgique se divise en 3 régions principales</p>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Région Wallonne </li>
+                        <li>Région Flamande</li>
+                        <li>Région de Bruxelles-Capitale</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Le pays dispose de 3 langues nationales, donc de 3 communautés :</p>
+                    <ul>
+                        <li>Fédération Wallonie-Bruxelles / Français </li>
+                        <li>Communauté Flamande / Néerlandais</li>
+                        <li>Communauté Germanophone / Allemand</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p>Il est surnommé le plat pays en raison de son point culminant qui n’est pas particulièrement élevé : le signal de Botrange à 694 m. Elle est l’un des 6 pays fondateurs de l’Europe. La Belgique est une monarchie constitutionnelle et parlementaire. Elle a détenue le record de la plus longue crise politique durant 7 ans, à savoir 541 jours sans gouvernement, battu par l’Irlande du Nord en août 2018 à cause du Brexit.</p>
+                
+                </div>
+
+                <div>
+                    <p>En Belgique, en plus de la Chambre des Représentants et du Sénat, vous avez 6 parlements :</p>
+                    <ul>
+                        <li>Parlement fédéral </li>
+                        <li>Parlement bruxellois</li>
+                        <li>Parlement de Wallonie</li>
+                        <li>Parlement flamand</li>
+                        <li>Parlement germanophone</li>
+                        <li>Parlement de la Fédération Wallonie-Bruxelles</li>
+                    </ul>
+                </div>
+
+                <div><p>Bon là, vous savez ce qu’il y a à savoir sur ce pays. Enfin, c’est juste une base suffisante, alors maintenant parlons des 3 villes que vous devez découvrir durant votre voyage en Belgique.</p></div>
+
+            </section>
+
+
+            <section id="article-1-belgique-greg" class="container-greg">
+                <div><h1>Bruxelles</h1></div>
+                <div id="article-1-center-img-greg"><img src="css/images/visiter-belgique-1.jpg" alt="vister1"></div>
+                <div><p>Débutons par la capitale belge. Bruxelles est une capitale à taille humainecomposée de quartiers bien différents. Je vous invite chaudement à admirer la plus belle place du monde, d’ensuite vous promener dans les rues pour y découvrir les fresques de bande-dessinée, et enfin de sourire à Manneken-Pis tout en mangeant une gaufre de Bruxelles.</p>
+                     <p>Bruxelles dispose d’un joli patrimoine et de nombreux musées, n’hésitez pas à y passer plus qu’une petite journée pour prendre le temps de la découvrir. Un week-end à Bruxelles est une belle façon d’entamer un voyage en Belgique. Gaufres, frites, bières, votre estomac y prendre un certain plaisir entre deux visites de musées.</p>
+                </div>
+                
+                <section id="article-2-belgique-greg" class="container-greg">
+                    <div><h1>Anvers</h1></div>
+                    <div id="article-2-center-img-greg"><img src="css/images/visiter-belgique-2.jpg" alt="vister2"></div>
+                    <div>
+                        <p>Anvers (ou Antwerpen en néerlandais) est également une très jolie ville flamande, elle est d’ailleurs la 2e plus grande ville du pays. Il s’agit même de la ville d’origine du peintre flamand Rubens, rien que ça ! </p>
+                        <p>Anvers est également connue pour son zoo, même si c’est quelque chose que je n’apprécie pas du tout, vous savez qu’il existe. Je vous propose plutôt de vous rendre sur la Grand-Place et d’y prendre un verre avant de visiter la cathédrale gothique Notre Dame d’Anvers ainsi que les différentes œuvres dans les rues. N’hésitez surtout pas à déambuler dans les rues, il n’y a rien de mieux pour découvrir une ville, vous devriez arriver dans le quartier des diamantaires.</p>
+                        <p>Même si la ville est grande, le centre-ville historique d’Anvers est plutôt petit et se parcours aisément à pied.</p>
+                        <p>Vous arriverez certainement à Anvers en train. La première chose qui vous surprendra sera la gare d’Anvers qui est tout bonnement magnifique. Prenez le temps d’en observer les détails car elle mérite à elle seule votre déplacement. Elle est tout de même classée comme l’une des plus belles gares du monde, c’est assurément la plus belle de Belgique à mes yeux.</p>
+                    </div>
+                </section>
+
+                <section id="article-3-belgique-greg" class="container-greg">
+                    <div><h1>Liège</h1></div>
+                    <div id="article-3-center-img-greg"><img src="css/images/visiter-belgique-3.jpg" alt="vister3"></div>
+                    <div>
+                        <p>Vous arriverez également à Liège en train, et tout comme Anvers, la gare devrait vous surprendre. Il y a 3 gares à Liège et celle de Liège-Guillemins en est la principale. Cette gare est dans un tout autre style architectural que la gare anversoise. Inaugurée en 2009, l’architecte en est Calatrava, et son architecture peut surprendre.</p>
+                        <p>Dans la gare, vous pourrez assister à une exposition temporaire avant de partir visiter le parc de la Boverie. Celui-ci est d’ailleurs magnifique au coucher de soleil.</p>
+                        <p>Vous allez avoir de nombreuses choses à visiter à Liège, la ville ne manque en effet pas de suggestions. Après le parc de la Boverie, n’hésitez surtout pas à faire un peu de sport en montant les 374 marches de la Montagne du Bueren. En plus de profiter d’une vue immanquable sur Liège, vous y découvrirez la Citadelle de Liège.</p>
+                        <p>Pour finir, goûtez une gaufre de Liège car vous l’aurez bien mérité après cet effort. Personnellement, je les préfère aux gaufres de Bruxelles.</p>
+                    
+                    </div>
+                </section>
+    
+
+
+
+
+        </main>
+
+        <footer>
+            <div class="m-footer">
+                <div class="m-rs">
+                    <div class="m-ligne1">
+                        <a href="https://www.facebook.com/"><p><i class="fab fa-facebook-square"></i> FACEBOOK</p></a>
+                        <a href="https://www.twitter.com/"><p><i class="fab fa-twitter-square"></i> TWITTER</p></a>
+                    </div>
+                    <div class="m-ligne2">
+                        <a href="https://www.instagram.com/"><p><i class="fab fa-instagram-square"></i> INSTAGRAM</p></a>
+                        <a href="https://www.pinterest.com/"><p><i class="fab fa-pinterest-square"></i> PINTEREST</p></a>
+                    </div>  
+                </div>
+                <div class="video-article-newsletter">
+                    <div class="m-video">
+                        <h2>Dernière vidéo</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iMUS7wlhboM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="m-newsletter">
+                        <h2>Newsletter</h2>
+                        <div class="formulaire-newsletter">
+                            <form action="voyage1.html">
+                                <div class="m-form-newsletter">
+                                    <div class="input-direction">
+                                        <label>Nom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction">
+                                        <label>Prénom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction">
+                                        <label>Adresse mail <span>*
+                                        </span></label>
+                                        <input type="email" name="email" required autocomplete="on" />
+                                    </div>
+                                    <div class="m-button-section">
+                                        <input type="submit" name="Sign Up" id="valider" value="S'INSCRIRE" />
+                                        <p><span>*</span> Champs obligatoires</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="m-articles-footer">
+                        <h2>Derniers articles</h2>
+                        <h3>ISLAND</h3>
+                        <img src="css/images/aurores.jpg">
+                        <h4><span>par</span> Marine Jacquens</h4>
+                        <h5><a href="">Lire l'article >>></a></h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
