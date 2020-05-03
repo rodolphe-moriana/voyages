@@ -154,3 +154,43 @@ video:focus{
 @media (min-width:1099px){
   .m-sidenav,#menu-icon{display:none;}
 }
+
+
+
+
+
+
+/*FOOTER*/
+
+.m-footer{
+    display: flex;
+    flex-direction: column;
+    height:400px;
+    background-color:#F2F2F1;
+    padding:2%;
+     font-family: 'Montserrat', sans-serif;
+}
+
+.m-footer a{
+    text-decoration: none;
+    color:black;
+    font-size:25px;
+}
+
+.m-footer a:hover{
+    color:white;
+    text-shadow: 1px 2px 2px lightgray;
+}
+
+
+.m-footer i{
+    color:grey;
+    margin-right:2%;
+    margin-left:2%;
+}
+
+.m-rs{
+    text-align: center;
+}
+
+

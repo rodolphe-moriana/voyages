@@ -3,7 +3,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-
 /*Images bannière*/
 
 .m-image-container{
@@ -99,16 +98,35 @@ body{
 .m-scroll-galerie{
     display: flex;
     flex-direction: row;
-    overflow:scroll;
-    
+    overflow: auto;
 }
+
+
+
+.m-scroll-galerie::-webkit-scrollbar {width: 12px;height: 10px;}
+ 
+.m-scroll-galerie::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+.m-scroll-galerie::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: white; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.m-scroll-galerie::-webkit-scrollbar-thumb:window-inactive {background: grey;}
+
+
+.m-div-image{overflow:hidden;}
 
 .m-colonne-galerie{
     display: flex;
     flex-direction:row;
+    min-width:100%;
 }
-
-
 
 .m-colonne-galerie1, .m-colonne-galerie3, .m-colonne-galerie6{width:35%;}
 
@@ -120,7 +138,21 @@ body{
 
 .m-colonne-galerie1 img, .m-colonne-galerie3 img, .m-colonne-galerie7 img {margin-bottom:2%;}
 
-#chine1, #chine8{width:100%;}
+#chine1, #chine8{
+    width:100%;
+    height:300px;
+}
+
+#chine2,
+#chine3,
+#chine6,
+#chine7,
+#chine4 img,
+#chine5 img{
+    height:140px;
+}
+
+
 
 .m-colonne-galerie2,.m-colonne-galerie4,.m-colonne-galerie7{
     display:flex;
@@ -130,13 +162,14 @@ body{
 
 #chine2, #chine6{
     margin-right:1%;
-    width:49%;
+    width:95%;
 }
 #chine3, #chine7{
     margin-left:1%;
-    width:49%;
+    width:95%;
 }
 
+#chine4 img, #chine5 img{width:100%;}
 
 .m-colonne-galerie3 img{width:100%;}
 
@@ -144,9 +177,99 @@ body{
     margin-left:2%;
 }
 
-#chine4 img, #chine5 img{margin-bottom:7%;}
+#chine4 img, #chine5 img{margin-bottom:5%;}
 
 #chine5{margin-right:2%;}
+
+
+
+
+
+
+
+
+.m-container {
+  position: relative;
+  width: 100%;
+}
+
+.m-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    
+}
+
+.m-galerie-image img{
+     transition: .5s ease;
+ filter: brightness(100%);
+-webkit-filter: brightness(100%);
+}
+
+.m-galerie-image img:hover{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    transform: scale(1.2);
+}
+
+
+.m-image img{
+ filter: brightness(100%);
+-webkit-filter: brightness(100%);
+}
+
+.m-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.m-container:hover .m-image {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    transform: scale(1.2);
+}
+
+.m-container:hover .m-middle {
+  opacity: 1;
+
+}
+
+.m-text {
+  background-color: black;
+    opacity:0.6;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.m-text a {
+    text-decoration:none; 
+    color:white;
+}
+
+.m-text a:hover{color:cornflowerblue}
+
+
+
+
+#m-espace-galerie{
+    margin-right:1%;
+}
+
+
+
+
+
+
+
 
 
 
@@ -175,3 +298,19 @@ body{
     .article1 img, .article2 img,#longji-height{height:200px;}
     .article1 h2{font-size:25px;}
   }
+
+
+
+#chine1, #chine8{
+    width:100%;
+    height:300px;
+}
+
+#chine2,
+#chine3,
+#chine6,
+#chine7,
+#chine4 img,
+#chine5 img{
+    height:140px;
+}
