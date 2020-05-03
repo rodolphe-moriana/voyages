@@ -7,7 +7,7 @@ width: 100%;
 /* TITLE BELGIQUE */
 
 #title-belgique-greg{
-padding-top: 5%;
+padding-top: 1%;
 width: 100%;
 display: flex;
 flex-direction: column;
@@ -18,15 +18,6 @@ display: flex;
 justify-content: center;
 font-size: 120px;
 color: #0DA4D3;
-}
-
-#title-belgique-greg p{
-padding-top: 2%;
-display: flex;
-justify-content: center;
-font-size: 35px;
-margin-right: 20%;
-margin-left: 20%;
 }
 
 #title-center-img-greg{
@@ -44,12 +35,6 @@ max-width: 100%;
 font-size: 40px;
 
 }
-
-#title-belgique-greg p{
-font-size: 23px;
-margin: 0;
-}
-
 }
 
 
@@ -70,7 +55,7 @@ color: #0DA4D3;
 
 #presentation-belgique-greg p{
 padding-top: 1%;
-font-size: 35px;
+font-size: 25px;
 margin-right: 20%;
 margin-left: 20%;
 }
@@ -78,7 +63,7 @@ margin-left: 20%;
 
 #presentation-belgique-greg ul{
 padding-top: 1%;
-font-size: 35px;
+font-size: 25px;
 margin-right: 20%;
 margin-left: 20%;
 text-align: left;
@@ -93,14 +78,18 @@ font-size: 40px;
 
 #presentation-belgique-greg p{
 padding-top: 3%;
-font-size: 26px;
-margin: 0;
+font-size: 18px;
+margin-right: 10%;
+margin-left: 10%;
+
 }
 
 #presentation-belgique-greg ul{
 padding-top: 3%;
-font-size: 26px;
+font-size: 18px;
 margin: 0;
+margin-right: 10%;
+margin-left: 10%;
 
 }
 
@@ -125,7 +114,7 @@ color: #0DA4D3;
 padding-top: 2%;
 display: flex;
 justify-content: center;
-font-size: 35px;
+font-size: 25px;
 margin-right: 20%;
 margin-left: 20%;
 }
@@ -148,8 +137,10 @@ font-size: 40px;
 
 #article-1-belgique-greg p{
 padding-top: 3%;
-font-size: 26px;
-margin: 0;
+font-size: 18px;
+margin-right: 10%;
+margin-left: 10%;
+
 }
 }
 
@@ -173,7 +164,7 @@ color: #0DA4D3;
 padding-top: 2%;
 display: flex;
 justify-content: center;
-font-size: 35px;
+font-size: 25px;
 margin-right: 20%;
 margin-left: 20%;
 }
@@ -196,8 +187,9 @@ font-size: 40px;
 
 #article-2-belgique-greg p{
 padding-top: 3%;
-font-size: 26px;
-margin: 0;
+font-size: 18px;
+margin-right: 10%;
+margin-left: 10%;
 }
 }
 
@@ -207,6 +199,7 @@ margin: 0;
 width: 100%;
 display: flex;
 flex-direction: column;
+padding-bottom: 4%;
 }
 
 #article-3-belgique-greg h1{
@@ -220,7 +213,7 @@ color: #0DA4D3;
 padding-top: 2%;
 display: flex;
 justify-content: center;
-font-size: 35px;
+font-size: 25px;
 margin-right: 20%;
 margin-left: 20%;
 }
@@ -243,8 +236,9 @@ font-size: 40px;
 
 #article-3-belgique-greg p{
 padding-top: 3%;
-font-size: 26px;
-margin: 0;
+font-size: 18px;
+margin-right: 10%;
+margin-left: 10%;
 }
 }
         
