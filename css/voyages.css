@@ -249,7 +249,7 @@ iframe:focus{
   margin-top: 2%;
 }
 
-#r-flex3 h2,h3{
+#r-flex3 h2,#r-flex3 h3{
   color: black;
   padding-right: 2%;
   font-family: 'Knewave', cursive;
