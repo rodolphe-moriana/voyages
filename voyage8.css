@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+.container-greg{
+    display: flex;
+    width: 100%;
+}
+
+#banner-usa-greg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: url(css/images/usa-banner.jpg);
+    width: 100%;
+    height: 777px;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width:1350px){
+		
+    #banner-usa-greg{
+      height: 80vh;
+    }
+  }
+  
+
+#titre-usa-greg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    font-weight: 700;
+    color: black;
+
+}
+
+@media (max-width:1350px){
+		
+    #titre-usa-greg{
+      font-size: 75px;
+      font-weight: 700;
+    }
+  }
+
+  /* article 1 usa */
+
+  #article-1-usa-greg{
+      margin-right: 20%;
+      margin-left: 20%;
+      padding-top: 3%;
+      font-size: 21px;
+  }
+
+  #article-1-usa-greg h1{ 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 100px;
+    font-weight: 700;
+    color: rgb(127,181,210);
+}
+
+@media (max-width:1350px){
+		
+    #article-1-usa-greg h1{
+      font-size: 30px;
+    }
+  }
+
+#article-1-usa-greg p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1%;
+}
+
+@media (max-width:1350px){
+		
+    #article-1-usa-greg p{
+      font-size: 15px;
+    }
+  }
+
+  /* galerie-1-usa */
+
+  @font-face {
+    font-family:"bric-a-brac";
+    src:url("bric-a-brac.eot");
+    src:url("bric-a-brac.eot?#iefix") format("embedded-opentype"),
+    url("bric-a-brac.woff") format("woff"),
+    url("bric-a-brac.ttf") format("truetype"),
+    url("bric-a-brac.svg#bric-a-brac") format("svg");
+    font-weight:normal;
+    font-style:normal}
+
+
+img{
+
+max-width:100%
+
+}
+
+.diapo_auto_rwd:after{
+    box-sizing:border-box
+}
+
+.diapo_auto_rwd:before{
+    box-sizing:border-box
+}
+
+
+.diapo_auto_rwd{
+	
+position:relative;
+max-width:600px;
+margin:2rem auto;
+overflow:hidden	
+	
+    }
+    
+    @media (max-width:1350px){
+		
+        .diapo_auto_rwd{
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+      }
+
+.diapo_auto_rwd input[type=radio]{
+	
+	position: absolute;
+	left: -9999px
+	
+	}
+
+.diapo_auto_rwd label{
+	
+	cursor:pointer
+	
+	}
+
+.diapo_auto_rwd ul {
+	
+position: relative;
+z-index: 1;
+margin: 0;
+padding: 0;
+list-style-type: none;
+overflow: hidden
+		
+		}
+
+.diapo_auto_rwd ul .slide_diapo {
+	
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+transition: transform .8s
+	
+	}
+
+
+ul .slide_diapo.image0{
+	
+	left: 0
+	
+	}
+	
+ul .slide_diapo.image1{
+	
+	left: 100%
+	
+	}
+	
+ul .slide_diapo.image2{
+	
+	left: 200%
+	
+	}
+	
+ul .slide_diapo.image3{
+	
+	left: 300%
+	
+	}
+
+#slide1:checked ~ ul .slide_diapo,
+#pause1:checked ~ ul .slide_diapo {
+
+transform: translatex(0)
+	
+	}
+
+#slide2:checked ~ ul .slide_diapo,
+#pause2:checked ~ ul .slide_diapo {
+
+transform: translatex(-100%)
+	
+	}
+
+#slide3:checked ~ ul .slide_diapo,
+#pause3:checked ~ ul .slide_diapo{
+
+transform: translatex(-200%)
+	
+	}
+
+
+@keyframes slide-diapo {
+	
+0%,25%{
+	
+	margin-left: 0
+	
+	}
+	
+33%,58%{
+	
+	margin-left: -100%
+	
+	}
+	
+66%,91%{
+	
+	margin-left: -200%
+	
+	}
+	
+	}
+
+
+
+.diapo_auto_rwd img,
+.precedent,
+.suivant,
+.lancement_arret {
+	
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none
+	
+	}
+
+
+.precedent,
+.suivant {
+	
+position: absolute;
+top: 50%;
+z-index: 1
+	
+	}
+
+.precedent label,
+.suivant label {
+	
+position: absolute;
+opacity: 0;
+z-index: -1;
+height: 50px;
+width: 0;
+transform: translate(0,-50%);
+
+}
+  
+.precedent {
+	
+	left: 0
+	
+	}
+	
+.suivant {
+	
+	right:50px
+	
+	}
+
+.precedent label:before{
+	
+	content:"\e05b"
+	
+	}
+	
+.suivant label:before{
+	
+	content:"\e067"
+	
+	}
+
+.precedent label:before,
+.suivant label:before{
+	
+position: absolute;
+font-family: "bric-a-brac";
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50px;
+background: hsla(0,0%,0%,.3);
+transition: background .3s;
+color: white
+		
+		}
+
+.precedent:hover label:before,
+.suivant:hover label:before{
+
+background: hsla(0,0%,0%,.8)
+		
+		}
+
+
+#slide1:checked ~ .precedent .image3,
+#pause1:checked ~ .precedent .image3,
+#slide1:checked ~ .suivant .image2,
+#pause1:checked ~ .suivant .image2, 
+#slide2:checked ~ .precedent .image1,
+#pause2:checked ~ .precedent .image1,
+#slide2:checked ~ .suivant .image3,
+#pause2:checked ~ .suivant .image3, 
+#slide3:checked ~ .precedent .image2,
+#pause3:checked ~ .precedent .image2,
+#slide3:checked ~ .suivant .image1,
+#pause3:checked ~ .suivant .image1 {
+	
+	opacity: 1;
+	z-index: 1
+	
+	}
+
+@keyframes fleche_diapo {
+	
+0%,33.33%{
+	
+opacity: 1;
+z-index: 0
+	
+	}
+	
+33.34%,100%{
+	
+opacity: 0;
+z-index: -1
+	
+	}
+	
+	}
+
+
+#lance-diapo:checked ~ .precedent .image3,
+#lance-diapo:checked ~ .suivant .image2 {
+
+animation: fleche_diapo 12.3s infinite -1s
+	
+	}
+
+#lance-diapo:checked ~ .precedent .image1,
+#lance-diapo:checked ~ .suivant .image3 {
+
+animation: fleche_diapo 12.3s infinite 3.1s
+	
+	}
+  
+  
+#lance-diapo:checked ~ .precedent .image2,
+#lance-diapo:checked ~ .suivant .image1 {
+
+animation: fleche_diapo 12.3s infinite 7.2s
+	
+  }
+  
+
+  /* article 2 usa */
+
+#article-2-usa-greg{
+  margin-right: 20%;
+  margin-left: 20%;
+  padding-top: 3%;
+  font-size: 21px;
+}
+
+#article-2-usa-greg h1{ 
+display: flex;
+text-align: center;
+justify-content: center;
+padding-top: 2%;
+padding-bottom: 2%;
+font-size: 100px;
+font-weight: 700;
+color: rgb(127,181,210);
+}
+
+@media (max-width:1350px){
+    
+#article-2-usa-greg h1{
+  font-size: 30px;
+}
+}
+
+#article-2-usa-greg p{
+text-align: left;
+padding-top: 2.5%;
+}
+
+#article-2-usa-greg ul{
+  text-align: left;
+  padding-top: 2.5%;
+  }
+
+  #article-2-usa-greg ul li{
+    padding-top: 1%;
+    }
+
+  @media (max-width:1350px){
+    
+    #article-2-usa-greg ul{
+      font-size: 15px;
+      text-align: left;
+    }
+    }
+
+@media (max-width:1350px){
+    
+#article-2-usa-greg p{
+  font-size: 15px;
+  text-align: left;
+}
+}
+
+#flex-img{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5%;
+}
+
+@media (max-width:1100px){
+    
+  #flex-img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  }
+
+#flex-img-1{
+  padding-right: 2%;
+}
+
+#flex-img{
+  padding-left: 2%;
+}
