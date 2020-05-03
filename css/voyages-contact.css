@@ -1,3 +1,5 @@
+h3 {font-family: 'Montserrat', sans-serif;}
+
 body{
     display: flex;
     flex-direction: column;
@@ -35,6 +37,7 @@ main{
 .types-messages h3 {
     font-size:20px;
     margin-bottom:5%;
+    color:white;
 }
 
 .types-messages span{font-weight:bold;}
