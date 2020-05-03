@@ -398,3 +398,65 @@ iframe:focus{
 @media (min-width:1099px){
   .m-sidenav,#menu-icon{display:none;}
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  /* ARTICLE 1 */
+
+  .accueil-article-1 h1{
+    margin-left: 0%;
+  }
+
+  #button-dernier-article{
+    margin-left: 25%;
+  }
+
+  .accueil-article-1 h1{
+      font-size: 3em;
+  }
+
+  /* ARTICLE 2 */
+
+  #titre-accueil-article-2{
+    font-size: 3em;
+  }
+
+  #accueil-article-2{
+    flex-direction: column;
+  }
+
+  .portrait-accueil{
+    width: 100%;
+    border: none;
+    margin-top: 5%;
+  }
+
+@media (max-width: 800px) {
+
+  /* ARTICLE 1 */
+
+  .accueil-article-1 h1{
+    font-size: 2em;
+}
+
+  /* ARTICLE 2 */
+
+  #titre-accueil-article-2{
+    font-size: 2em;
+  }
+
+@media (max-width: 400px) {
+
+  /* ARTICLE 1 */
+
+  .accueil-article-1 h1{
+    font-size: 1em;
+}
+
+  /* ARTICLE 2 */
+
+  #titre-accueil-article-2{
+    font-size: 1em;
+  }

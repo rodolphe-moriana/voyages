@@ -223,3 +223,59 @@ table tr td img{
         opacity: 1;
     }
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    /* ARTICLE 2 */
+
+    .r-container-aus-art-2{
+        flex-direction: column;
+    }
+
+    #r-container-aus-art-2-gauche,#r-container-aus-article-2-droite{
+        width: 85%;
+    }
+
+    #r-container-esp-article-2-droite p{
+        font-size: 1em;
+    }
+
+    /* ARTICLE 4 */
+
+   #aus-article-4 a p{
+    font-size: 1em;
+   }
+}
+
+@media (max-width: 800px) {
+
+
+    /* ARTICLE 2 */
+
+    #r-container-aus-article-2-droite p{
+        font-size: 0.5em;
+    }
+
+    /* ARTICLE 4 */
+
+    #aus-article-4 a p{
+        font-size: 0.5em;
+       }
+}
+
+@media (max-width: 400px) {
+
+    /* ARTICLE 2 */
+
+    #r-container-aus-article-2-droite p{
+        font-size: 0.2em;
+    }
+
+    /* ARTICLE 4 */
+
+    #aus-article-4 a p{
+        font-size: 0.2em;
+       }
+}
