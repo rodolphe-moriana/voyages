@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>La Chine</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/voyages.css">
+        <link rel="stylesheet" href="css/voyage2.css">
+        <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+        <meta name="author" content="R. Moriana G.Lopez M. Jacquens">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="fa.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav id="m-monmenu" class="m-content">
+                <div id="mySidenav" class="m-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#"><i class="fas fa-home"></i> ACCUEIL</a>
+                    <a class="m-dropdown-btn"><i class="fas fa-user-friends"></i> LA TEAM <i class="fa fa-caret-down"></i></a>
+                        <div class="m-dropdown-container">
+                            <a class="m-dropdown-btn">RODOLPHE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="#">ESPAGNE</a>
+                                    <a href="#">AUSTRALIE</a>
+                                    <a href="#">MAROC</a>
+                                </div>
+                            <a class="m-dropdown-btn">GREG</a>
+                                <div class="m-dropdown-container">
+                                    <a href="#">CANADA</a>
+                                    <a href="#">BRESIL</a>
+                                    <a href="#">MAROC</a>
+                                </div>
+                            <a class="m-dropdown-btn">MARINE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="voyages1.html#m-islande">ISLAND</a>
+                                    <a href="#">CHINE</a>
+                                    <a href="#">COREE</a>
+                                </div>
+                        </div>
+                    <a class="m-dropdown-btn"><i class="fas fa-globe-americas"></i> CONTINENTS <i class="fa fa-caret-down"></i></a>
+                        <div class="m-dropdown-container">
+                            <a class="m-dropdown-btn" href="#">AMERIQUE DU NORD</a>
+                                <div class="m-dropdown-container">
+                                    <a href="#">CANADA</a>
+                                    <a href="#">ETATS-UNIS</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="#">AMERIQUE DU SUD</a>
+                                <div class="m-dropdown-container">
+                                    <a href="#">BRESIL</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="#">EUROPE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="#">ISLAND</a>
+                                    <a href="#">ESPAGNE</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="#">AFRIQUE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="#">MAROC</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="#">ASIE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="#">JAPON</a>
+                                    <a href="#">CHINE</a>
+                                </div>
+                            <a class="m-dropdown-btn" href="#">OCEANIE</a>
+                                <div class="m-dropdown-container">
+                                    <a href="#">AUSTRALIE</a>
+                                </div>
+                        </div>
+                    <a href="voyages-contact.html"><i class="fas fa-address-book"></i> CONTACT</a>
+                </div>
+                <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "250px";
+                }
+
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                }
+                </script>
+                <script>
+                    var dropdown = document.getElementsByClassName("m-dropdown-btn");
+                    var i;
+
+                    for (i = 0; i < dropdown.length; i++) {
+                      dropdown[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var dropdownContent = this.nextElementSibling;
+                      if (dropdownContent.style.display === "block") {
+                      dropdownContent.style.display = "none";
+                      } else {
+                      dropdownContent.style.display = "block";
+                      }
+                      });
+                    }
+                </script>
+                <div><h1>TRAVEL</h1></div>
+                <div>
+                <ul class="m-niveau1">
+                    <li><a href="#"><i class="fas fa-home"></i> ACCUEIL</a></li>
+                    <li>
+                        <a href="#"><i class="fas fa-user-friends"></i> LA TEAM</a>
+                        <ul class="m-niveau2">
+                            <li>
+                                <a href="#">RODOLPHE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="#">ESPAGNE</a></li>
+                                    <li><a href="#">MAROC</a></li>
+                                    <li><a href="#">AUSTRALIE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">GREG</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="#">BELGIQUE</a></li>
+                                    <li><a href="#">CANADA</a></li>
+                                    <li><a href="#">USA</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="marine.html">MARINE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="voyages1.html#m-islande">ISLAND</a></li>
+                                    <li><a href="#">CHINE</a></li>
+                                    <li><a href="#">COREE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="continents.html"><i class="fas fa-globe-americas"></i> CONTINENTS</a>
+                        <ul class="m-niveau2">
+                            <li>
+                                <a href="#">AMERIQUE DU NORD</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="#">CANADA</a></li>
+                                    <li><a href="#">USA</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">AMERIQUE DU SUD</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="#">BRESIL</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">EUROPE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="#">ESPAGNE</a></li>
+                                    <li><a href="#">ISLAND</a></li>
+                                    <li><a href="#">BELGIQUE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">AFRIQUE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="#">MAROC</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ASIE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="#">CHINE</a></li>
+                                    <li><a href="#">COREE</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">OCEANIE</a>
+                                <ul class="m-niveau3">
+                                    <li><a href="#">AUSTRALIE</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="contact-test.html"> <i class="fas fa-address-book"></i> CONTACT</a></li>
+                </ul>
+                </div>
+                <div class="m-search-container">
+                    <form action="voyage-test.html">
+                      <input id="m-button" type="text" placeholder="Rechercher" name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="m-islande" class="m-image-container">
+                <div class="cover"><img src="css/images/chine.jpg" alt=""></div>
+                <div class="text"><h1>LA CHINE</h1></div>
+            </div>
+            <section class="article1">
+                <h2>En apprendre plus sur la Chine pour un séjour optimal</h2>
+                <img src="css/images/cite-interdite.jpg" alt="Cité Interdite"> <br><br>
+                <h3>La Cité Interdite</h3><br>
+                <blockquote cite="https://www.clio.fr/BIBLIOTHEQUE/la_cite_interdite.asp">
+                    <p>
+                        <span>"Centre de Pékin, centre symbolique de la Chine et du monde, le palais impérial – Cité interdite – fut durant des siècles le sanctuaire inviolé de la puissance du céleste empereur. Son ordonnancement reflète la structure politique de l'empire du Milieu, mais aussi l'organisation de la cour impériale. Pierre Colombel nous convie à un véritable chemin initiatique à travers ses palais, pavillons et jardins."</span><br><br>
+                        "À l'heure où les toitures vernissées de la Cité interdite s'enflamment sous les derniers rayons du soleil couchant, les visiteurs, par milliers, semblent jaillir des salles d'audience, des appartements, des galeries et des jardins, déferlant vers les cinq ponts qui enjambent la rivière aux Eaux d'or, avant de s'engouffrer dans le gigantesque portail du palais impérial de Pékin, la porte du Midi, et se répandre en foule innombrable sur la place Tien an Men."
+                    </p><br>
+                    <footer>
+                        <span>— Pierre Colombel —</span>
+                        <br><cite><a href="https://www.clio.fr/BIBLIOTHEQUE/la_cite_interdite.asp">Souvenirs des dynasties Ming et Qing</a></cite>
+                    </footer><br>
+                </blockquote> 
+            </section>
+            <section class="article2">
+                <img src="css/images/vallee-Huanglong-chine.jpg" alt="vallee-Huanglong">
+                    <div class="article2-img">
+                        <img src="css/images/vall%C3%A9e%20hualong1.jpg" alt="vallee-Huanglong">
+                        <img src="css/images/vall%C3%A9e%20hualong2.jpg" alt="vallee-Huanglong">
+                    </div>
+                <img src="css/images/vall%C3%A9e%20hualong3.jpg" alt="vallee-Huanglong"><br>
+                <h3>La vallée de Huanglong</h3><br>
+                <blockquote cite="https://generationvoyage.fr/huanglong-piscines-calcaires-chine/">
+                    <p>
+                        "Pour ceux qui veulent découvrir la Chine, s’émerveiller devant une beauté 100% naturelle, vous devez vous rendre dans le district de Songpan, dans le nord de la région du Sichuan, à Huanglong plus précisément.
+                        Ce site est classé au Patrimoine mondial de l’UNESCO depuis 1992 et ce parc national avec ses incroyables bassins d’eau turquoise semble comme suspendu à plus de 3000 m d’altitude."<br><br>
+                        <span>Description</span><br>
+                        "La région de Huanglong comprend de nombreux sommets qui sont couverts de neiges éternelles. À ses glaciers intemporels s’ajoutent des écosystèmes forestiers très variés que l’on rencontre avec des formations dites karstiques spectaculaires, d’immenses chutes d’eau et des sources d’eau chaudes.
+                        D’une superficie de près de 60.000 hectares, ce site est une curiosité tant géologique que physique : outre ses forêts, la diversité de la faune, ce sont les cascades, les terrasses, les lacs travertins, les chutes, et les affleurements calcaires qui accrochent le regard. La vallée de Huanglong est assez compacte; elle est cernée par trois pics vertigineux, une station étant placée à l’entrée de la vallée pour contrôler les accès. Hors d’une zone délimitée, on rencontre souvent des moines tibétains qui se promènent avec leurs troupeaux."
+                    </p><br>
+                    <footer>
+                        <span>— Arnaud Bouchet —</span>
+                        <br><cite><a href="https://generationvoyage.fr/huanglong-piscines-calcaires-chine/">Découvrez Huanglong et ses piscines calcaires en Chine</a></cite>
+                    </footer><br>
+                </blockquote> 
+            </section>
+            <section class="article1">
+                <img src="css/images/reed-flute-cave.jpg" alt="Reed Flute Cave"> <br><br>
+                <h3>Reed flute cave</h3><br>
+                <blockquote cite="https://decouvrirlemonde.fr/explorez-reed-flute-cave-une-grotte-feerique-au-sud-de-la-chine/">
+                    <p>
+                        "Une multitude de grottes impressionnantes se trouvent en Asie. Parmi elles, on peut retrouver la plus grande grotte du monde, des sanctuaires religieux, mais aussi des lieux féeriques. La grotte “Reed Flute Cave” est située à Guilin en Chine. C’est un site peu médiatisé et pourtant, il réserve de nombreuses belles surprises à ses visiteurs. Aussi appelée “Palais des Arts Naturels”, c’est un incontournable de tout voyage en Chine."<br><br>
+
+                        "Reed Flute Cave ou en français “grotte de la flûte de roseau” a été redécouverte seulement dans les années 40. Pourtant, elle avait été explorée une première fois par la dynastie Tang il y a plus de mille ans. Des inscriptions prouvent leur passage dans ce lieu à cette époque. La grotte existerait depuis plus de 180 millions d’années. Aujourd’hui, elle est visitée chaque jour par de nombreux touristes qui ont l’opportunité d’assister à un spectacle de son et lumière incroyable !"
+                    </p><br>
+                    <footer>
+                        <span>— Leila El Aissawi —</span>
+                        <br><cite><a href="https://decouvrirlemonde.fr/explorez-reed-flute-cave-une-grotte-feerique-au-sud-de-la-chine/">Explorez Reed Flute Cave, une grotte féerique au sud de la Chine</a></cite>
+                    </footer><br>
+                </blockquote> 
+            </section>
+            <section class="article1">
+                <img src="css/images/mont%20hua-chine.jpg" alt="Le Mont Hua"> <br><br>
+                <h3>Le Mont Hua</h3><br>
+                <blockquote cite="https://positivr.fr/heavenly-stairs-hua-shan/">
+                    <p>
+                        "Bon, j’espère que vous n’avez pas le vertige… parce que sinon, ce chemin va vous donner des sueurs froides. Ces photos ont été prises près du Mont Hua Shan, qui se situe juste au dessus de de la ville de Xi’an."<br><br>
+
+                        "Il s’agit d’un parcours, creusé à même la roche qui commence par des marches, les fameuses Heavenly Stairs (Marches du Paradis), puis se transforme rapidement en chemin de planches fixées sur le flanc de la montagne, pour finir… euh, vous verrez bien ! Mais vous allez être surpris."
+                        <br><br>
+                        "Chaque année, des milliers de personnes prennent ce chemin. Il faut soit être un fan absolu d’escalade et d’expériences grisantes et dangereuses (voir mortelles)… soit VRAIMENT aimer le thé."<br><br>
+                        
+                        "Mais ce qui est sur, c’est que voici une expérience qui ne doit pas laisser indifférent."
+                    </p><br>
+                    <footer>
+                        <span>— Harold Paris —</span>
+                        <br><cite><a href="https://positivr.fr/heavenly-stairs-hua-shan/">Heavenly Stairs : les marches du paradis du Mont Hua Shan</a></cite>
+                    </footer><br>
+                </blockquote> 
+            </section>
+            <section class="article2">
+                <img src="css/images/longji-riziere.jpg" alt="longji-riziere">
+                    <div class="article2-img">
+                        <img src="css/images/longji-riziere1.jpg" alt="longji-riziere">
+                        <img src="css/images/longji-riziere2.jpg" alt="longji-riziere">
+                    </div>
+                <img id="longji-height" src="css/images/longji-riziere3.jpg" alt="longji-riziere"><br>
+                <h3>La rizière de Longji</h3><br>
+                <blockquote cite="https://www.lefigaro.fr/voyages/guangxi-au-pays-des-collines-debout-20190927">
+                    <p>
+                        "<span>GUIDE DE VOYAGE -</span> Les paysages semblent tout droit sortis d’une estampe chinoise. À partir de Guilin, la rivière Li serpente parmi les collines verticales et les pics embrumés. Plus au nord, les rizières en terrasses de Longji dessinent une œuvre patiemment sculptée par l’homme. Loin du tumulte des grandes villes, bienvenue dans une Chine rurale et verdoyante."<br><br>
+                        "Comparée aux 24 millions d’habitants de Shanghaï, Guilin, qui n’en compte même pas un million, fait figure de petite bourgade provinciale. Pourtant, les touristes chinois s’y rendent chaque année par millions, au point d’en faire la quatrième destination touristique du pays après Pékin, Shanghaï et Xi’an. Certes, les abords des six lacs alimentés par la rivière Li en plein centre-ville sont plaisants. Le lac Rong accueille deux pagodes, l’une en cuivre représentant le soleil, l’autre en argent représentant la lune.Une ribambelle de ponts enjambent les cours d’eau: passerelles translucides, pont en marbre blanc de Chine, répliques du Golden Gate, de pont vénitien ou de notre pont Alexandre-III."<a href="https://www.lefigaro.fr/voyages/guangxi-au-pays-des-collines-debout-20190927">[...]</a>
+                    </p><br>
+                    <footer>
+                        <span>— Vincent Noyoux —</span>
+                        <br><cite><a href="https://www.lefigaro.fr/voyages/guangxi-au-pays-des-collines-debout-20190927">La province de Guangxi, le pays des collines debout</a></cite>
+                    </footer><br>
+                </blockquote> 
+            </section>
+            <section class="article1">
+                <img src="css/images/palais-ete.jpg" alt="Le Palais d'Eté"> <br><br>
+                <h3>Le Palais d' Eté</h3><br>
+                <blockquote cite="https://www.lefigaro.fr/international/le-palais-d-ete-de-pekin-symbole-de-l-humiliation-chinoise-20190805">
+                    <p>
+                        "Construit au XVIIIe siècle, le Yuanmingyuan a été pillé et détruit par les troupes françaises et anglaises en 1860, avant qu’un autre palais ne soit édifié en 1886 par l’impératrice Cixi."<br><br>
+
+                        "Au dramatique incendie de Notre-Dame de Paris fait écho dans l’histoire une série de catastrophes ayant détruit ou endommagé des monuments célèbres. En Russie, en Asie, en Europe, Le Figaro se penche sur les reconstructions qui ont suivi, les défis qu’elles ont posés et les polémiques qu’elles ont pu nourrir."
+                        <br><br>
+                        <span>Correspondant à Pékin</span><br>
+                        "Il y avait, dans un coin du monde, une merveille du monde», mais «cette merveille a disparu», écrit Victor Hugo en 1861. Fou de rage, l’écrivain s’adresse à un officier anglais, le capitaine Butler, pour fustiger la destruction un an plus tôt du Palais d’été de Pékin, dont la <a href="https://www.lefigaro.fr/international/le-palais-d-ete-de-pekin-symbole-de-l-humiliation-chinoise-20190805">[...]</a>"<br><br>
+                    </p><br>
+                    <footer>
+                        <span>— Cyrille Pluyette —</span>
+                        <br><cite><a href="https://www.lefigaro.fr/international/le-palais-d-ete-de-pekin-symbole-de-l-humiliation-chinoise-20190805">Le Palais d’été de Pékin, symbole de l’humiliation chinoise</a></cite>
+                    </footer><br>
+                </blockquote> 
+            </section>
+            <section class="m-galerie-image">
+                <h2>Retrouvez toutes mes photos sur instagram</h2><br>
+                <div class="m-scroll-galerie">
+                    <div class="m-colonne-galerie">
+                        <div class="m-colonne-galerie1">
+                            <img id="chine1" src="css/images/chine.gif" alt="chine-galerie-img">
+                            <div class="m-colonne-galerie2">
+                                <img id="chine2" src="css/images/chine.gif" alt="chine-galerie-img">
+                                <img id="chine3" src="css/images/chine.gif" alt="chine-galerie-img">
+                            </div>
+                        </div>
+                        <div class="m-colonne-galerie3">
+                            <div class="m-colonne-galerie4">
+                                <div id="chine4" class="m-colonne-galerie5">
+                                    <img src="css/images/chine.gif" alt="chine-galerie-img">
+                                    <img src="css/images/chine.gif" alt="chine-galerie-img">
+                                    <img src="css/images/chine.gif" alt="chine-galerie-img">
+                                </div>
+                                <div id="chine5" class="m-colonne-galerie5">
+                                    <img src="css/images/chine.gif" alt="chine-galerie-img">
+                                    <img src="css/images/chine.gif" alt="chine-galerie-img">
+                                    <img src="css/images/chine.gif" alt="chine-galerie-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-colonne-galerie6">
+                            <div class="m-colonne-galerie7">
+                                <img id="chine6" src="css/images/chine.gif" alt="chine-galerie-img">
+                                <img id="chine7" src="css/images/chine.gif" alt="chine-galerie-img">
+                            </div>
+                            <img id="chine8" src="css/images/chine.gif" alt="chine-galerie-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

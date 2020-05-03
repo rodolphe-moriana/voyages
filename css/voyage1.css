@@ -16,17 +16,39 @@ body{
         
 }
 
-.m-banniere-islande img{
-    width:100%;
-    height:500px;
-}
-
 .m-articles-dispo{
     width:70%;
     padding:2%; 
     background-color:;
 }
 
+/*Images bannière*/
+
+.m-image-container{
+    max-height:480px;
+}
+
+.cover img{
+    display: flex;
+    position:relative;
+    max-height:480px;
+    width: 100%;
+}
+
+.text{
+    background-color:white;
+    color:black;
+    font-size:3vw;
+    font-weight:bold;
+    margin: 0 auto;
+    padding:1%; 
+    width:50%;
+    text-align: center;
+    position:absolute;
+    top:45%;
+    right:2%;
+    mix-blend-mode: screen;
+}
 
 /*ARTICLES*/
 
@@ -222,7 +244,7 @@ body{
 
 
 
-@media (min-width:999px){
+@media (min-width:899px){
     #newsletter-spe{display:none;}
   }
 
