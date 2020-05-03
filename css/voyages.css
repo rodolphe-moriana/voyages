@@ -139,6 +139,25 @@ iframe:focus{
   width: 100%;
 }
 
+/* ACCUEIL ARTICLE 2 */
+
+#accueil-article-2{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.portrait-accueil{
+  width: 25%;
+  height: 500px;
+  border: black solid 3px;
+  box-shadow: black 0 0 50px;
+}
+
+.portrait-accueil video{
+  width: 100%;
+}
+
 /* 404 */
 
 #r-main404{
