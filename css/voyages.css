@@ -34,6 +34,111 @@ iframe:focus{
   outline: none;
 }
 
+/* ACCUEIL */
+
+.accueil-article-1{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#button-dernier-article{
+  display: flex;
+  margin-left: 45%;
+  margin-top: 10%;
+  position: absolute;
+}
+
+#button-dernier-article nav ul li{
+  --c: white;
+  color: var(--c);
+  font-size: 16px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+#button-dernier-article nav ul li span{
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+#button-dernier-article nav ul li:hover{
+  color: black;
+}
+
+#button-dernier-article nav ul li:hover span{
+  transform: translateY(0) scale(2);
+}
+
+#button-dernier-article nav ul li span:nth-child(1){
+  --n: 1;
+}
+
+#button-dernier-article nav ul li span:nth-child(2){
+  --n: 2;
+}
+
+#button-dernier-article nav ul li span:nth-child(3){
+  --n: 3;
+}
+
+#button-dernier-article nav ul li span:nth-child(4){
+  --n: 4;
+}
+
+
+.accueil-article-1 h1{
+  padding-bottom: 13%;
+  padding-left: 30%;
+  font-size: 2rem;
+  margin: 15px;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-family: "Francois one";
+  font-size: 80px;
+}
+
+#contenu-video{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  padding-top: 12%;
+}
+
+#container-video{
+  width: 100%;
+}
+
+#container-video video{
+  width: 100%;
+}
+
 /* 404 */
 
 #r-main404{
@@ -80,9 +185,15 @@ iframe:focus{
 }
 /*HEADER*/
 
+/* Logo TRAVEL */
+
+#r-top-header-link a{
+  text-decoration: none;
+}
+
 /*Menu 3 niveaux*/
 
-.m-content { 
+.m-content{ 
     display: flex;
     justify-content: space-around;
     width:100%; 
@@ -101,7 +212,7 @@ iframe:focus{
     color:white;
 }
  
-#m-monmenu { margin-top; height:40px; }
+#m-monmenu { height:40px; }
  
 #m-monmenu ul { list-style-type:none; }
 #m-monmenu ul li { float:left; }
@@ -137,7 +248,6 @@ iframe:focus{
 #m-button{
     border-radius:30px;
     padding:2%;
-    border:;
     float:left;
     width:80%;
 }
