@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column; 
+    flex-wrap:wrap;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:3px 3px 3px black;
+}
+
+.f-colonnes{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around; background:url(images/formulaire.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding:5%;
+    width: auto;
+}
+
+.types-messages{
+    flex-direction: column;
+    color:white;
+    font-size: 30px;
+    padding:5%;
+    text-align: justify;
+    width:25%;
+}
+
+.types-messages p{font-size: 20px;}
+
+.types-messages h3 {
+    font-size:20px;
+    margin-bottom:5%;
+}
+
+.types-messages span{font-weight:bold;}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+}
+
+.form-back{
+    display: flex;
+    flex-direction: column;
+    padding:5%;
+}
+
+.label-position{
+    display:flex;
+    flex-direction: column;
+	margin-bottom: 1%;
+    padding-top: 5%;    
+}
+
+#message{height:150px;}
+
+.formulaire input[type="text"],
+.formulaire input[type="email"],
+.formulaire textarea,
+.formulaire select {
+    font: 13px 'Montserrat', sans-serif;
+    color:grey;
+	width: auto;
+	padding: 5%;
+    outline:none;
+    border:none;
+    border-radius:1px;
+}
+
+.button-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+
+#valider{
+    width:auto;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+	background: black;
+	padding: 5%;
+	color: #fff;
+    border: none;
+	font-size: 12px;
+    flex-wrap:wrap;
+    outline:none;
+}
+
+#valider:hover{
+	background: #4A2956 ;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+
+.asterisque p{
+    margin-top:5%;
+    font-size:15px;
+    color:white;
+}
+
+.separation{
+    margin-top:10%;
+    margin-bottom:10%;
+}
+
+@media (max-width:980px){
+  .f-colonnes{
+      flex-wrap:wrap;
+  }
+    .types-messages,.formulaire{width:100%}
+}
