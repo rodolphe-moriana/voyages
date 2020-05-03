@@ -213,8 +213,8 @@ iframe:focus{
 /* 404 */
 
 #r-main404{
-  background-repeat:no-repeat;
   background-color: #F7F7F7;
+  height: 900px;
   font-family: 'Chewy', cursive;
 }
 

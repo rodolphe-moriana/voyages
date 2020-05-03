@@ -298,3 +298,122 @@ hr{
         opacity: 1;
     }
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    /* ARTICLE 1 */
+
+    #r-containter-esp-art-1{
+        flex-direction: column-reverse;
+    }
+    #r-sous-container-esp-2{
+        display: none;
+    }
+    
+    #r-sous-container-esp-1{
+        width: 85%;
+    }
+
+    #r-txt-espagne-1{
+        font-size: 1em;
+    }
+
+    /* ARTICLE 2 */
+
+    .r-container-esp-art-2{
+        flex-direction: column;
+    }
+
+    #r-container-esp-art-2-gauche,#r-container-esp-article-2-droite{
+        width: 85%;
+    }
+
+    #r-container-esp-article-2-droite p{
+        font-size: 1em;
+    }
+
+    /* ARTICLE 3 */
+
+    .r-container-esp-art-3{
+        flex-direction: column-reverse;
+    }
+
+    #r-container-esp-article-3-gauche,#r-container-esp-article-3-droite{
+        width: 85%;
+        margin-left: 10%;
+    }
+
+    #r-container-esp-article-3-gauche p{
+        font-size: 1em;
+    }
+
+    /* ARTICLE 4 */
+
+    .r-container-esp-art-4{
+        flex-direction: column;
+    }
+
+    #r-container-esp-article-4-gauche,#r-container-esp-article-4-droite{
+        width: 85%;
+    }
+
+    #r-container-esp-article-4-droite p{
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 800px) {
+
+    /* ARTICLE 1 */
+
+    #r-txt-espagne-1{
+        font-size: 0.5em;
+    }
+
+    /* ARTICLE 2 */
+
+    #r-container-esp-article-2-droite p{
+        font-size: 0.5em;
+    }
+
+    /* ARTICLE 3 */
+
+    #r-container-esp-article-3-gauche p{
+        font-size: 0.5em;
+    }
+
+    /* ARTICLE 4 */
+
+    #r-container-esp-article-4-droite p{
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 400px) {
+
+    /* ARTICLE 1 */
+
+    #r-txt-espagne-1{
+        font-size: 0.2em;
+    }
+
+    /* ARTICLE 2 */
+
+    #r-container-esp-article-2-droite p{
+        font-size: 0.2em;
+    }
+
+    /* ARTICLE 3 */
+
+    #r-container-esp-article-3-gauche p{
+        font-size: 0.2em;
+    }
+
+    /* ARTICLE 4 */
+
+    #r-container-esp-article-4-droite p{
+        font-size: 0.2em;
+    }
+}
