@@ -1,0 +1,271 @@
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.m-organisation-page{
+    display: flex;
+    flex-direction: column;
+    margin-top:10%;
+    margin-right:5%;
+    margin-left:5%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+        
+}
+
+.m-articles-dispo{
+    width:70%;
+    padding:2%; 
+    background-color:;
+}
+
+/*Images bannière*/
+
+.m-image-container{
+    max-height:480px;
+}
+
+.cover img{
+    display: flex;
+    position:relative;
+    max-height:480px;
+    width: 100%;
+}
+
+.text{
+    background-color:white;
+    color:black;
+    font-size:3vw;
+    font-weight:bold;
+    margin: 0 auto;
+    padding:1%; 
+    width:50%;
+    text-align: center;
+    position:absolute;
+    top:45%;
+    right:2%;
+    mix-blend-mode: screen;
+}
+
+/*ARTICLES*/
+
+
+/*Article*/
+
+.m-main-article{
+    overflow: auto;
+    height:2100px;
+}
+
+.m-main-article::-webkit-scrollbar{display: none;}
+
+.m-main-article img{width:100%}
+.m-main-article h2{margin-bottom:3%;}
+.m-main-article p{text-align: justify}
+.m-main-article span {font-weight:bold}
+.m-main-article a {
+    text-decoration: none;
+    color:grey;
+}
+
+.m-main-article a:hover{color:cornflowerblue;}
+
+
+.list-prevision{
+    border:0.1px solid lightgray;
+    padding:2%;
+    background-color:white;
+}
+
+.list-prevision ul{
+   list-style-type: decimal;
+     margin-left:5%;
+}
+
+
+
+
+
+/*Commentaire*/
+
+
+.form-commentaire{
+    background-color:white;
+}
+
+.form-commentaire h2{
+    margin-top:3%;
+    margin-bottom:3%;
+    padding-bottom: 1%;
+    border-bottom:1px solid lightgray;
+    
+}
+
+.form-commentaire span{color:red}
+
+.nom-prenom-mail{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.commentaire-input-direction textarea{
+    margin-top:1%;
+    margin-bottom:3%
+}
+
+.commentaire-input-direction, .m-nom-input, .m-prenom-input, .m-mail-input{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.commentaire-input-direction textarea{height:200px;}
+
+.nom-prenom-mail input[type="text"],
+.nom-prenom-mail input[type="email"]{
+    width:180px; 
+}
+
+.nom-prenom-mail input[type="text"],
+.nom-prenom-mail input[type="email"],
+.commentaire-input-direction textarea{
+    outline:none;
+}
+
+.m-button-section1 input[type="submit"]{
+    padding:2%;
+    margin-top:3%;
+    margin-bottom: 3%;
+    outline:none;
+    width:100%;
+    background-color:white;
+    color:grey;
+    border:1px solid lightgray;
+    box-shadow:  3px 3px lightgray;
+}
+
+.m-button-section1 input[type="submit"]:hover{
+    background-color:lightgray;
+    box-shadow:  3px 3px grey;
+    color:white;
+    
+}
+
+.m-button-section1 input[type="submit"]:active {
+  box-shadow: 0 3px grey;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+/*BARRE LATERALE*/
+
+.m-colonne-lateral{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    padding:2%;
+    border:0.1px solid lightgray;
+    height:3000px;
+}
+
+.m-colonne-lateral h2{
+    margin-bottom:5%;
+}
+
+.m-presentation a {
+    text-decoration: none;
+    color:red;
+}
+
+.m-presentation a:hover{
+    color:cornflowerblue; text-decoration: underline
+}
+
+.m-presentation iframe{
+    width:100%;
+    border:none;
+}
+
+
+.m-scroll {
+    overflow:auto;
+    height:2000px;
+}
+
+.m-scroll::-webkit-scrollbar{display: none;}
+
+.selection-articles h4{font-style: italic}
+.selection-articles span{font-size:12px;}
+.selection-articles img {width:100%;}
+.selection-articles a{
+    text-decoration: none;
+        color:black;
+}
+.selection-articles a:hover{color:cornflowerblue;}
+
+
+
+
+
+.input-direction{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-direction input{
+    margin-top:3%;
+    margin-bottom:3%;
+    padding: 2%;
+    outline:none;
+}
+
+.formulaire-newsletter span {color:red;}
+
+.m-button-section input{
+    margin-top:3%;
+    margin-bottom: 3%;
+    outline:none;
+}
+
+.m-button-section p {font-size:12px;}
+
+.m-button-section input[type="submit"]{
+    padding:2%;
+}
+
+
+
+@media (min-width:899px){
+    #newsletter-spe{display:none;}
+  }
+
+
+
+@media (max-width:999px){
+  .m-presentation iframe{display: none;}
+    .nom-prenom-mail{
+    display: flex;
+    flex-direction:row;
+        flex-wrap: wrap;
+    justify-content:space-between;
+}
+  }
+
+@media (max-width:899px){
+  .m-colonne-lateral{display: none;}
+    .nom-prenom-mail input[type="text"],
+.nom-prenom-mail input[type="email"]{
+    width:100%; 
+}
+  }
+
+

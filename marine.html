@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Marine</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/voyages.css">
+        <link rel="stylesheet" href="css/marine.css">
+        <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+        <meta name="author" content="R. Moriana G.Lopez M. Jacquens">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="fa.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+        <nav id="m-monmenu" class="m-content">
+            <div id="mySidenav" class="m-sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="voyages.html"><i class="fas fa-home"></i> ACCUEIL</a>
+                <a class="m-dropdown-btn"><i class="fas fa-user-friends"></i> LA TEAM <i class="fa fa-caret-down"></i></a>
+                    <div class="m-dropdown-container">
+                        <a class="m-dropdown-btn" href="rodolphe.html">RODOLPHE</a>
+                            <div class="m-dropdown-container">
+                                <a href="voyage4.html">ESPAGNE</a>
+                                <a href="voyage5.html">AUSTRALIE</a>
+                                <a href="voyage6.html">MAROC</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="greg.html">GREG</a>
+                            <div class="m-dropdown-container">
+                                <a href="voyage9.html">BELGIQUE</a>
+                                <a href="voyage8.html">ETATS-UNIS</a>
+                                <a href="voyage7.html">CANADA</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="marine.html">MARINE</a>
+                            <div class="m-dropdown-container">
+                                <a href="voyages1.html">ISLANDE</a>
+                                <a href="voyages2.html">CHINE</a>
+                            </div>
+                    </div>
+                <a class="m-dropdown-btn"><i class="fas fa-globe-americas"></i> CONTINENTS <i class="fa fa-caret-down"></i></a>
+                    <div class="m-dropdown-container">
+                        <a class="m-dropdown-btn" href="404.html">AMERIQUE DU NORD</a>
+                            <div class="m-dropdown-container">
+                                <a href="voyage7.html">CANADA</a>
+                                <a href="voyage8.html">ETATS-UNIS</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="404.html">AMERIQUE DU SUD</a>
+                            <div class="m-dropdown-container">
+                                <a href="404.html">BRESIL</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="404.html">EUROPE</a>
+                            <div class="m-dropdown-container">
+                                <a href="voyage1.html">ISLANDE</a>
+                                <a href="voyage4.html">ESPAGNE</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="404.html">AFRIQUE</a>
+                            <div class="m-dropdown-container">
+                                <a href="voyage6.html">MAROC</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="404.html">ASIE</a>
+                            <div class="m-dropdown-container">
+                                <a href="voyage2.html">CHINE</a>
+                            </div>
+                        <a class="m-dropdown-btn" href="404.html">OCEANIE</a>
+                            <div class="m-dropdown-container">
+                                <a href="voyage5.html">AUSTRALIE</a>
+                            </div>
+                    </div>
+                <a href="voyages-contact.html"><i class="fas fa-address-book"></i>CONTACT</a>
+            </div>
+            <span id="menu-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+            <script>
+                var dropdown = document.getElementsByClassName("m-dropdown-btn");
+                var i;
+
+                for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var dropdownContent = this.nextElementSibling;
+                  if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                  } else {
+                  dropdownContent.style.display = "block";
+                  }
+                  });
+                }
+            </script>
+            <div id="r-top-header-link"><a href="voyages.html"><h1>TRAVEL</h1></a></div>
+            <div>
+            <ul class="m-niveau1">
+                <li><a href="voyages.html"><i class="fas fa-home"></i> ACCUEIL</a></li>
+                <li>
+                    <a href="404.html"><i class="fas fa-user-friends"></i> LA TEAM</a>
+                    <ul class="m-niveau2">
+                        <li>
+                            <a href="rodolphe.html">RODOLPHE</a>
+                            <ul class="m-niveau3">
+                                <li><a href="voyage4.html">ESPAGNE</a></li>
+                                <li><a href="voyage6.html">MAROC</a></li>
+                                <li><a href="voyage5.html">AUSTRALIE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="greg.html">GREG</a>
+                            <ul class="m-niveau3">
+                                <li><a href="voyage9.html">BELGIQUE</a></li>
+                                <li><a href="voyage8.html">ETATS-UNIS</a></li>
+                                <li><a href="voyage7.html">CANADA</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="marine.html">MARINE</a>
+                            <ul class="m-niveau3">
+                                <li><a href="voyage1.html">ISLANDE</a></li>
+                                <li><a href="voyage2.html">CHINE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="continents.html"><i class="fas fa-globe-americas"></i> CONTINENTS</a>
+                    <ul class="m-niveau2">
+                        <li>
+                            <a href="404.html">AMERIQUE DU NORD</a>
+                            <ul class="m-niveau3">
+                                <li><a href="voyage7.html">CANADA</a></li>
+                                <li><a href="voyage8.html">ETATS-UNIS</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="404.html">AMERIQUE DU SUD</a>
+                            <ul class="m-niveau3">
+                                <li><a href="404.html">BRESIL</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="404.html">EUROPE</a>
+                            <ul class="m-niveau3">
+                                <li><a href="voyage4.html">ESPAGNE</a></li>
+                                <li><a href="voyage1.html">ISLANDE</a></li>
+                                <li><a href="voyage9.html">BELGIQUE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="404.html">AFRIQUE</a>
+                            <ul class="m-niveau3">
+                                <li><a href="voyage6.html">MAROC</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="404.html">ASIE</a>
+                            <ul class="m-niveau3">
+                                <li><a href="voyage2.html">CHINE</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="404.html">OCEANIE</a>
+                            <ul class="m-niveau3">
+                                <li><a href="voyage5.html">AUSTRALIE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="voyages-contact.html"> <i class="fas fa-address-book"></i> CONTACT</a></li>
+            </ul>
+            </div>
+            <div class="m-search-container">
+                <form action="404.html">
+                  <input id="m-button" type="text" placeholder="Rechercher" name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+        <main class="m-corps">
+            <section class="m-profil">
+                <div class="m-photo flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="css/images/Photo%20Marine.jpg" alt="photo-marine">
+                            <div class="m-flipcardrecto">
+                                <h2>Marine Jacquens</h2><br>
+                                <h3>27 ans</h3>
+                            </div> 
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Signe astro</h3><br>
+                            <img src="css/images/cancer.png" alt="astro-cancer">
+                            <h3>Hobbies</h3><br>
+                            <i class="fas fa-piano"></i>
+                            <i class="fas fa-book"></i>
+                            <i class="fas fa-camera-movie"></i><br><br>
+                            <h3>Suivez moi sur</h3><br>
+                            <a href="https://www.facebook.com/marine.jacquens"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.linkedin.com/in/marine-jacquens/"><i class="fab fa-linkedin-square"></i></a>
+                            <a href="https://www.instagram.com/marine_jacquens/?hl=fr"><i class="fab fa-instagram-square"></i></a>
+                            <a href="https://github.com/marine-jacquens"><i class="fab fa-github-square"></i></a>  
+                        </div>
+                    </div>
+                </div>
+                <div class="m-resume">
+                    <h2>Profil</h2><br>
+                    <h3>Web designer</h3> <br>
+                    <hr><br>
+                    <p>
+                        Diplômée de l'université d'Aix-Marseille en Langues étrangères Appliquées anglais-japonais, j'ai eu l'occasion de découvrir une partie de l'Asie pendant mon cursus. Depuis j'aime tellement voyager que je suis partie à l'assaut des pays européens.  <br><br>
+
+                        Spécialisée dans le web développement et le design ce blog est pour moi l'occasion de mettre en avant mes compétences en développement web tout en partageant avec vous mes expériences à l'étranger. 
+                    </p><br>
+                    <i class="fas fa-envelope-open-text"></i> <a href="mailto:marine.jacquens@gmail.com">marine.jacquens@gmail.com</a><br><br>
+                    <i class="fas fa-address-book"></i> + 33 (0)6 17 48 40 43
+                    <div class="m-down">
+                        <a href="marine.html#paysage-article"><i class="fas fa-arrow-circle-down"></i></a>
+                    </div>
+                </div>
+                <div class="m-skill flip-card2">
+                    <div class="flip-card-inner2">
+                        <div class="flip-card-front2">
+                            <h2>Compétences principales</h2><br>
+                            <h3>Web design</h3> <br>
+                            <p>INDESIGN</p>
+                            <div class="container">
+                                <div class="skills indesign">100%</div>
+                            </div>
+                            <p>ILLUSTRATOR</p>
+                            <div class="container">
+                                <div class="skills illustrator">90%</div>
+                            </div>
+                            <p>PHOTOSHOP</p>
+                            <div class="container">
+                                <div class="skills photoshop">80%</div>
+                            </div><br>
+                            <hr><br>
+                            <h3>Programmation</h3><br>
+                            <p>HTML</p>
+                            <div class="container">
+                                <div class="skills html">90%</div>
+                            </div>
+                            <p>CSS</p>
+                            <div class="container">
+                                <div class="skills css">80%</div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back2">
+                            <h2>Compétences transversales</h2><br>
+                            <h3>Langues</h3> <br>
+                            <p>ANGLAIS</p>
+                            <div class="container">
+                                <div class="skills indesign">100%</div>
+                            </div>
+                            <p>JAPONAIS</p>
+                            <div class="container">
+                                <div class="skills illustrator">90%</div>
+                            </div><br>
+                            <hr><br>
+                            <h3>Marketing</h3><br>
+                            <p>AUDIT SITE & RS</p>
+                            <div class="container">
+                                <div class="skills html">90%</div>
+                            </div>
+                            <p>ETUDE DE MARCHE</p>
+                            <div class="container">
+                                <div class="skills css">80%</div>
+                            </div> 
+                            <p>CAMPAGNE DE COMMUNICATION</p>
+                            <div class="container">
+                                <div class="skills css">80%</div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="paysage-article" class="m-paysage">
+                <h1>ISLANDE</h1>
+                <p></p>
+            </section>
+            <section class="m-articles">
+                <div>
+                    <h1>Découvrez ses destinations phares </h1>
+                    <h3> Consultez les articles détaillants les sites accessibles seul</h3><br>
+                </div>
+                <div class="m-colonne-articles">
+                    <div class="m-colonne-row-articles">
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/Seljalandsfoss.jpg">
+                            <img class="m-image-articles" src="css/images/Seljalandsfoss.jpg" alt="Seljalandsfoss" height="200">
+                            </a>
+                            <a class="m-overlay" href="voyage1.html#seljalandsfoss"><h3>Seljalandsfoss</h3></a>
+                        </div><span class="m-espace"></span>
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/geysir-hot-spring.jpg">
+                            <img class="m-image-articles" src="css/images/geysir-hot-spring.jpg" alt="geysir" height="200">
+                            </a>
+                            <a class="m-overlay" href="voyage1.html#geysir"><h3>Les geysers de Geysir</h3></a>
+                        </div><span class="m-espace"></span>
+                    </div>
+                    <div class="m-colonne-row-articles-spe">
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/Reynisfjara-Beach-Iceland.jpg">
+                            <img class="m-image-articles" src="css/images/Reynisfjara-Beach-Iceland.jpg" alt="Reynisfjara-Beach">
+                            </a>
+                            <a class="m-overlay" href="voyage1.html#reynisfjara"><h3>Reynisfjara Beach</h3></a>
+                        </div><span class="m-espace"></span>
+                    </div>
+                    <div class="m-colonne-row-articles">
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/Skogafoss.jpg">
+                            <img class="m-image-articles" src="css/images/Skogafoss.jpg" alt="Skogafoss" height="200">
+                            </a>
+                            <a class="m-overlay" href="voyage1.html#skogafoss"><h3>La cascade de Skogafoss</h3></a>
+                        </div><span class="m-espace"></span>
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/jokulsarlon-islande.jpg" >
+                            <img class="m-image-articles" src="css/images/jokulsarlon-islande.jpg" alt="jokulsarlon" height="200">
+                            </a>
+                            <a class="m-overlay" href="voyage1.html#jökulsárlón"><h3>Jökulsárlón</h3></a>
+                        </div>
+                    </div>         
+                </div> 
+            </section>
+            <section id="m-chine" class="m-paysage">
+                <h1>CHINE</h1>
+                <p></p>
+            </section>
+            <section class="m-articles2">
+                <div>
+                    <h1>Découvrez ses destinations phares </h1>
+                    <h3> Consultez les articles détaillants les sites accessibles seul</h3><br>
+                </div>
+                <div class="m-colonne-articles">
+                    <div class="m-column-g m-colonne-row-articles2">
+                        <div class="m-colonne-row-articles-spe2">
+                            <div class="m-container-articles">
+                                <a target="_blank" href="css/images/reed-flute-cave.jpg">
+                                <img class="m-image-articles" src="css/images/reed-flute-cave.jpg" alt="Reed flute cave">
+                                </a>
+                                <a class="m-overlay" href="voyage2.html#reed"><h3>Reed flute cave</h3></a>
+                            </div>
+                        </div><span class="m-espace2"></span>
+                        <div class="m-chine-row">
+                            <div class="m-container-articles">
+                                <a target="_blank" href="css/images/cite-interdite.jpg">
+                                <img class="m-image-articles" src="css/images/cite-interdite.jpg" alt="La cité interdite" height="200">
+                                </a>
+                                <a class="m-overlay2" href="voyage2.html#cite-interdite"><h3>La Cité interdite</h3></a>
+                            </div><span class="m-espace"></span>
+                            <div class="m-container-articles">
+                                <a target="_blank" href="css/images/palais-ete.jpg">
+                                <img class="m-image-articles" src="css/images/palais-ete.jpg" alt="Le Palais d'été" height="200">
+                                </a>
+                                <a class="m-overlay2" href="voyage2.html#palais-ete"><h3>Le Palais d'été</h3></a>
+                            </div><span class="m-espace"></span>
+                        </div>
+                    </div><span class="m-espace3"></span>
+                    <div class="m-column-d m-colonne-row-articles2">
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/vallee-Huanglong-chine.jpg">
+                            <img class="m-image-articles" src="css/images/vallee-Huanglong-chine.jpg" alt="Vallée de Huanglong" height="200">
+                            </a>
+                            <a class="m-overlay" href="voyage2.html#huanglong"><h3>La vallée de Huanglong</h3></a>
+                        </div><span class="m-espace4"></span>
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/longji-riziere.jpg" >
+                            <img class="m-image-articles" src="css/images/longji-riziere.jpg" alt="Rizière de Longji" height="200">
+                            </a>
+                            <a class="m-overlay" href="voyage2.html#longji"><h3>Rizière de Longji</h3></a>
+                        </div><span class="m-espace4"></span>
+                        <div class="m-container-articles">
+                            <a target="_blank" href="css/images/mont%20hua-chine.jpg" >
+                            <img class="m-image-articles" src="css/images/mont%20hua-chine.jpg" alt="Mont Hua" height="200">
+                            </a>
+                            <a class="m-overlay" href="voyage2.html#mont-hua"><h3>Mont Hua</h3></a>
+                        </div>
+                    </div>         
+                </div> 
+            </section>
+        </main>
+        <footer>
+            <div class="m-footer">
+                <div class="m-rs">
+                    <div class="m-ligne1">
+                        <a href="https://www.facebook.com/"><p><i class="fab fa-facebook-square"></i> FACEBOOK</p></a>
+                        <a href="https://www.twitter.com/"><p><i class="fab fa-twitter-square"></i> TWITTER</p></a>
+                    </div>
+                    <div class="m-ligne2">
+                        <a href="https://www.instagram.com/"><p><i class="fab fa-instagram-square"></i> INSTAGRAM</p></a>
+                        <a href="https://www.pinterest.com/"><p><i class="fab fa-pinterest-square"></i> PINTEREST</p></a>
+                    </div>  
+                </div>
+                <div class="video-article-newsletter">
+                    <div class="m-video">
+                        <h2>Dernière vidéo</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iMUS7wlhboM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="m-newsletter">
+                        <h2>Newsletter</h2>
+                        <div class="formulaire-newsletter">
+                            <form action="voyages.html">
+                                <div class="m-form-newsletter">
+                                    <div class="input-direction">
+                                        <label>Nom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction">
+                                        <label>Prénom</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+                                    <div class="input-direction">
+                                        <label>Adresse mail <span>*
+                                        </span></label>
+                                        <input type="email" name="email" required autocomplete="on" />
+                                    </div>
+                                    <div class="m-button-section">
+                                        <input type="submit" name="Sign Up" id="valider" value="S'INSCRIRE" />
+                                        <p><span>*</span> Champs obligatoires</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="m-articles-footer">
+                        <h2>Derniers articles</h2>
+                        <h3>ISLAND</h3>
+                        <img src="css/images/aurores.jpg">
+                        <h4><span>par</span> Marine Jacquens</h4>
+                        <h5><a href="">Lire l'article >>></a></h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
